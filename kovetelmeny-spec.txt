@@ -8,3 +8,19 @@
 3.2. Média kölcsönzése
 3.2.1. vevő az áruházban választ, eladó árat számol
 3.2.2. Média kiadása: eladó átadja a vevőnek a kiválasztott médiát, felveszi az Excel táblázatba
+…
+
+4. Igényelt üzleti folyamatok
+4.1. Médiák adatainak nyilvántartása adatbázisban
+4.1.1. Új média felvevése a nyilvántartásba: az ügyvezető végzi
+4.2. Média kikölcsönzése
+4.2.1. Online felületen vagy személyesen árkalkulál
+4.2.2. Média kiadása: az ügyvezető végzi, “kiadva”-ra állítani a médiát
+…
+
+5. A rendszerre vonatkozó szabályok A web felület szabványos eszközökkel készüljön, html/css. A képek jpeg és png formátumúak lehetnek.
+…
+
+6. Követelménylista
+K01 Könnyen üzemeltethető rendszer
+K02 Reszponzív dizájn 
