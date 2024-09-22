@@ -1,0 +1,10 @@
+1. Jelenlegi helyzet: Van egy informatikai rendszerünk amiben csak annyit látunk hogy az adott film van-e raktáron.
+
+2. Vágyálom rendszer: Szeretnénk egy rendszert, ahol nyomon tudjuk követni a kiadott médiákat és kezelni tudjuk a raktárban elérhetőket. Továbbá szeretnénk egy online felületet, ahol a vevő tud előre árat kalkulálni, és megtekinteni, hogy egy média elérhető-e.
+
+3. Jelenlegi üzleti folyamatok:
+3.1. Médiák adatainak nyilvántartása Excel táblázatban
+3.1.1. Új média felvétele: ügyvezető beírja a táblázatba
+3.2. Média kölcsönzése
+3.2.1. vevő az áruházban választ, eladó árat számol
+3.2.2. Média kiadása: eladó átadja a vevőnek a kiválasztott médiát, felveszi az Excel táblázatba
