@@ -111,4 +111,4 @@ A rendszer átadásra kerül az ügyfélnek, és biztosítunk üzemeltetési tá
 - **Fejlesztő csapat**:
   - **Backend fejlesztő**: Ákos– Adatbázis és API fejlesztés.
   - **Frontend fejlesztő**: Antal – Felhasználói felület kialakítása és interakciók kezelése.
-  - **Tesztelő, Scrum
+  - **Tesztelő, Scrum master**: Péter– Tesztelési folyamatok végrehajtása, hibák azonosítása.
