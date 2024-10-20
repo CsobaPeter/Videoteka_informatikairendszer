@@ -12,7 +12,6 @@ A rendszernek lehetőséget kell biztosítania a médiák adatainak nyilvántart
 - Az ügyvezető feladata lesz új médiák hozzáadása a rendszerhez.
 - Az ügyvezető megadhatja a következő adatokat:
   - Média neve
-  - Leírás
   - Kategória
   - Kölcsönzési ár
   - Raktárkészlet
@@ -70,7 +69,6 @@ A rendszer egy vevői weboldalt is tartalmaz, amely a következő funkciókat bi
   - Média azonosító
   - Név
   - Kategória
-  - Leírás
   - Kölcsönzési ár
   - Státusz (raktáron/kölcsönözve)
   - Készlet mennyisége
@@ -80,8 +78,7 @@ A rendszer egy vevői weboldalt is tartalmaz, amely a következő funkciókat bi
 ### 5.1. Online felület
 - **Főoldal**: médiák listázása keresési lehetőséggel.
 - **Média részletek oldala**: a média leírása, elérhetőségi információk, ár kalkulálási lehetőség.
-- **Kosár**: a kiválasztott médiák és az árak összegzése.
-
+  
 ### 5.2. Adminisztrációs felület
 - **Média kezelése**: új médiák felvétele, meglévők szerkesztése, státusz frissítése.
 
