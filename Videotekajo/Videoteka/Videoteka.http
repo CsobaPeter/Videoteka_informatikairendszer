@@ -1,0 +1,6 @@
+@Videoteka_HostAddress = http://localhost:5272
+
+GET {{Videoteka_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
