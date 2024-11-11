@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KMYq2JCeCqU=",
+  "dgSpecHash": "oOVh/JaeGc0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Antosz\\Desktop\\Videoteka\\Videoteka\\Videoteka.csproj",
+  "projectFilePath": "C:\\Users\\Antosz\\Desktop\\5.félév\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Videoteka.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Antosz\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\Antosz\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

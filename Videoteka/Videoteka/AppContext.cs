@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Videoteka.Models;
+using Videoteka.Shared.Models;
 
 namespace Videoteka
 {

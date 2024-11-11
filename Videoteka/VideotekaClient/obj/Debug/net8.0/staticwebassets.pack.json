@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Antosz\\Desktop\\5.félév\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\Antosz\\Desktop\\5.félév\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\obj\\Debug\\net8.0\\compressed\\xwqhhmgp6p.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\Antosz\\Desktop\\5.félév\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\obj\\Debug\\net8.0\\scopedcss\\bundle\\VideotekaClient.styles.css",
+      "PackagePath": "staticwebassets\\VideotekaClient.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\Antosz\\Desktop\\5.félév\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Antosz\\Desktop\\5.félév\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Antosz\\Desktop\\5.félév\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Antosz\\Desktop\\5.félév\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Antosz\\Desktop\\5.félév\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\Antosz\\Desktop\\5.félév\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Antosz\\Desktop\\5.félév\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.VideotekaClient.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.VideotekaClient.props",
+      "PackagePath": "build\\VideotekaClient.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.VideotekaClient.props",
+      "PackagePath": "buildMultiTargeting\\VideotekaClient.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.VideotekaClient.props",
+      "PackagePath": "buildTransitive\\VideotekaClient.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

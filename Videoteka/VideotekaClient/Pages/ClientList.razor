@@ -1,0 +1,29 @@
+﻿@page "/clients"
+@using VideotekaClient.Services
+@using Videoteka.Shared.Models
+@inject IClientService ClientService
+
+<h3>Clients</h3>
+
+@if (clients == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <ul>
+        @foreach (var client in clients)
+        {
+            <li>@client.Name - @client.Email - @client.PhoneNumber</li>
+        }
+    </ul>
+}
+
+@code {
+    private List<Client> clients;
+
+    protected override async Task OnInitializedAsync()
+    {
+        clients = await ClientService.GetAllClients();
+    }
+}

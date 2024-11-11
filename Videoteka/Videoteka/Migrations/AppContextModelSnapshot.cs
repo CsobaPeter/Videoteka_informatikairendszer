@@ -30,7 +30,7 @@ namespace Videoteka.Migrations
                     b.Property<DateTime>("BorrowDate")
                         .HasColumnType("TEXT");
 
-                    b.Property<Guid>("ClientId")
+                    b.Property<Guid>("MediaId")
                         .HasColumnType("TEXT");
 
                     b.Property<Guid>("MediaId")
@@ -47,9 +47,9 @@ namespace Videoteka.Migrations
                     b.ToTable("Borrows");
                 });
 
-            modelBuilder.Entity("Videoteka.Models.Client", b =>
+            modelBuilder.Entity("Videoteka.Models.Media", b =>
                 {
-                    b.Property<Guid>("ClientId")
+                    b.Property<Guid>("MediaId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("TEXT");
 
@@ -70,7 +70,7 @@ namespace Videoteka.Migrations
                     b.Property<int>("PhoneNumber")
                         .HasColumnType("INTEGER");
 
-                    b.HasKey("ClientId");
+                    b.HasKey("MediaId");
 
                     b.ToTable("Clients");
                 });

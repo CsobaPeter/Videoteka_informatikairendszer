@@ -21,13 +21,12 @@
     </PackageReference>
     <PackageReference Include="Serilog.AspNetCore" Version="8.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.9.0" />
+	  <ProjectReference Include="..\Videoteka.Shared\Videoteka.Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>
 	  <Folder Include="Services\" />
 	  <Folder Include="Migrations\" />
-	  <Folder Include="Controllers\" />
-	  <Folder Include="Repositories\" />
   </ItemGroup>
 
 </Project>

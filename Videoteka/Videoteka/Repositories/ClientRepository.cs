@@ -1,4 +1,4 @@
-﻿using Videoteka.Models;
+﻿using Videoteka.Shared.Models;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -50,15 +50,9 @@ namespace Videoteka.Repositories
             client.Name = newClient.Name;
             client.Address = newClient.Address;
             client.Email = newClient.Email;
+            client.PhoneNumber = newClient.PhoneNumber;
 
             await _context.SaveChangesAsync();
         }
-
-
-        public async Task<List<Borrow>> GetMediasOfClient(Guid clientId)
-        {
-            return await _context.Borrows.Where(j => j.ClientId == clientId).ToListAsync();
-        }
-
     }
 }

@@ -1,11 +1,11 @@
-﻿using Videoteka.Models;
+﻿using Videoteka.Shared.Models;
 using Videoteka.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
-namespace MechanicApp.Controllers
+namespace Videoteka.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("client/[controller]")]
     public class ClientsController : ControllerBase
     {
         private readonly IClientRepository _clientRepo;
@@ -46,7 +46,7 @@ namespace MechanicApp.Controllers
         }
 
         [HttpGet("{id:guid}")]
-        public async Task<ActionResult<Client>> Get(Guid id)
+        public async Task<ActionResult<Media>> Get(Guid id)
         {
             var client = await _clientRepo.Get(id);
 
@@ -59,7 +59,7 @@ namespace MechanicApp.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<Client>>> GetAll()
+        public async Task<ActionResult<List<Media>>> GetAll()
         {
             return Ok(await _clientRepo.GetAll());
         }
@@ -82,19 +82,6 @@ namespace MechanicApp.Controllers
             await _clientRepo.Update(newClient);
 
             return Ok();
-        }
-
-        [HttpGet("{id:guid}/borrows")]
-        public async Task<ActionResult<List<Media>>> GetMediasOfClient(Guid id)
-        {
-            var client = await _clientRepo.Get(id);
-
-            if (client is null)
-            {
-                return NotFound();
-            }
-
-            return Ok(await _clientRepo.GetMediasOfClient(id));
         }
     }
 }

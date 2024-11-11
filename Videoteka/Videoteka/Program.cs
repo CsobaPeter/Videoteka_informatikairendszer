@@ -27,6 +27,8 @@ namespace Videoteka
                 options.UseLazyLoadingProxies();
             }, ServiceLifetime.Singleton);
 
+            builder.Services.AddSingleton<IMediaRepository, MediaRepository>();
+            builder.Services.AddSingleton<IBorrowRepository, BorrowRepository>();
             builder.Services.AddSingleton<IClientRepository, ClientRepository>();
 
             var app = builder.Build();

@@ -1,4 +1,4 @@
-﻿using Videoteka.Models;
+﻿using Videoteka.Shared.Models;
 
 namespace Videoteka.Repositories
 {
@@ -13,7 +13,5 @@ namespace Videoteka.Repositories
         Task<List<Client>> GetAll();
 
         Task Update(Client client);
-
-        Task<List<Borrow>> GetMediasOfClient(Guid clientId);
     }
 }
