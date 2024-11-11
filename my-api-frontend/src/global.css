@@ -1,0 +1,20 @@
+/* src/global.css */
+.container {
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 1200px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
