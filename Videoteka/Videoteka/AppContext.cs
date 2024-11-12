@@ -14,5 +14,6 @@ namespace Videoteka
         public virtual DbSet<Client> Clients { get; set; }
         public virtual DbSet<Media> Medias { get; set; }
         public virtual DbSet<Borrow> Borrows { get; set; }
+        public virtual DbSet<User> Users { get; set; }
     }
 }

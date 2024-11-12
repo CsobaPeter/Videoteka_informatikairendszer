@@ -19,6 +19,7 @@ namespace Videoteka.Controllers
         public async Task<IActionResult> Add([FromBody] Media media)
         {
             var existingMedia = await _mediaRepo.Get(media.MediaId);
+            Console.WriteLine("Existing media: " + existingMedia);
 
             if (existingMedia is not null)
             {

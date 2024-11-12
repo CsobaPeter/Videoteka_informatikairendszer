@@ -33,6 +33,8 @@ namespace Videoteka
 
             var app = builder.Build();
 
+            app.UseMiddleware<ActiveUserMiddleware>();
+            
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
