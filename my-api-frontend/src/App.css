@@ -69,11 +69,15 @@ body {
 
 .filter-input,
 .sort-button,
-.filter-input:focus {
+.filter-input:focus,
+.comparison-button-default{
   padding: 0.5rem;
   border-radius: 6px;
   border: 1px solid #ddd;
-  transition: border-color 0.2s;
+  transition: border-color 0.65s;
+}
+.filter-number-input {
+  width: 50px;
 }
 
 .filter-input:focus,
@@ -87,9 +91,20 @@ body {
   border: 1px solid #ddd;
   color: #555;
   padding: 0.5rem 0.8rem;
+  margin: 10px;
 }
 
-.sort-button:hover {
+.comparison-button-default {
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  color: #555;
+  padding: 0.5rem 0.8rem;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.sort-button:hover, .comparison-button-default:hover {
   background-color: #007bff;
   color: white;
 }
@@ -183,12 +198,39 @@ body {
 
 .table-row {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr auto;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Dynamically adjust columns */
+  gap: 1rem; /* Add space between columns */
+  align-items: center; /* Align items vertically */
   background-color: white;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.table-row .form-field,
+.table-row .form-buttons {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+.form-buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.header-item {
+
 }
 
 .table-row:hover {
@@ -209,4 +251,90 @@ body {
   padding: 0.5rem;
   font-size: 1rem;
   color: #555;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Match .table-row */
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.table-header span,
+.table-header .ghost-header {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.table-header .ghost-header {
+  visibility: hidden; /* Makes the "Edit/Delete" header invisible but reserves space */
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Dynamically adjust columns */
+  gap: 1rem;
+  align-items: center;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.table-row .form-field,
+.table-row .form-buttons {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;  /* Fix the modal to the viewport */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent dark background */
+  display: flex;
+  justify-content: center;  /* Center horizontally */
+  align-items: center;  /* Center vertically */
+  z-index: 1000;  /* Ensure the modal is above other content */
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Optional shadow for a 3D effect */
+}
+
+.modal-buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.modal-buttons button:hover {
+  background-color: #0056b3;
 }

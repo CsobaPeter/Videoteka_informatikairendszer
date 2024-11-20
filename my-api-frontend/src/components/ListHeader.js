@@ -1,46 +1,156 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
-const ListHeader = ({ headers, onSort, onFilter, filters }) => {
-    const [sortDirection, setSortDirection] = useState({});
-    
-    const handleSort = (key) => {
-        const newDirection = sortDirection[key] === 'asc' ? 'desc' : 'asc';
-        setSortDirection((prev) => ({ ...prev, [key]: newDirection }));
-        onSort(key, newDirection);  // Trigger the sorting in the parent
+const ListHeader = ({
+                        headers,
+                        onFilter,
+                        onSort,
+                        filters,
+                        sortConfig,
+                        indexToMediaType
+                    }) => {
+    const [selectedTypes, setSelectedTypes] = useState([]);
+    const [isInStockActive, setIsInStockActive] = useState(false); // Track the toggle state for the "In Stock" button
+    const [comparisonStates, setComparisonStates] = useState({}); // Store toggle states for comparison buttons
+
+    // Handle toggling the "In Stock" button
+    const handleInStockToggle = () => {
+        setIsInStockActive((prevState) => !prevState); // Toggle the button's state
+        onFilter('stock', isInStockActive ? '' : 'greater'); // Send appropriate filter value to parent
+    };
+
+    // Handle toggling comparison buttons (rating/duration)
+    const handleComparisonToggle = (key) => {
+        const currentComparison = comparisonStates[key] || 'greater';
+        const newComparison = currentComparison === 'greater' ? 'less' : 'greater';
+
+        setComparisonStates((prevStates) => ({
+            ...prevStates,
+            [key]: newComparison,
+        }));
+
+        onFilter(`${key}Comparison`, newComparison); // Send the updated comparison to parent
+    };
+
+    const handleTypeSelect = (type) => {
+        console.log(type);
+        if (!selectedTypes.includes(type)) {
+            console.log('adding type');
+            const updatedTypes = [...selectedTypes, type];
+            setSelectedTypes(updatedTypes);
+            onFilter('type', updatedTypes);
+        }
+    };
+
+    const handleTypeRemove = (type) => {
+        const updatedTypes = selectedTypes.filter((t) => t !== type);
+        setSelectedTypes(updatedTypes);
+
+        onFilter('type', updatedTypes);
+    };
+
+    const sortButtonCreatorWithHeaderKey = (key) => {
+        const isActiveSort = sortConfig.key === key;
+        const direction = isActiveSort ? sortConfig.direction : null;
+
+        return (
+            <button
+                className={`sort-button ${isActiveSort ? direction : ''}`}
+                onClick={() => onSort(key)}
+            >
+                {direction === 'asc' ? '↑' : direction === 'desc' ? '↓' : '⇅'}
+            </button>
+        );
     };
 
     return (
-        <div className="list-header">
+        <div className="table-header">
             {headers.map((header) => (
-                <div key={header.key} className="header-cell">
-                    <span>{header.label}</span>
-                    <input
-                        className="filter-input"
-                        type="text"
-                        placeholder={`Filter ${header.label}`}
-                        value={filters[header.key] || ''}
-                        onChange={(e) => onFilter(header.key, e.target.value)} // Handle filtering in the parent
-                    />
+                <div key={header.key} className="header-item">
                     {header.key === 'rating' || header.key === 'duration' ? (
                         <>
-                            <select
-                                className="filter-input"
-                                value={filters[`${header.key}Comparison`] || 'greater'}
-                                onChange={(e) => onFilter(`${header.key}Comparison`, e.target.value)}
+                            {/* Toggle Button for Comparison */}
+                            <button
+                                className={`comparison-button ${
+                                    comparisonStates[header.key] === 'less' ? 'less' : 'greater'
+                                }, comparison-button-default`}
+                                onClick={() => handleComparisonToggle(header.key)}
                             >
-                                <option value="greater">Greater than</option>
-                                <option value="less">Less than</option>
-                            </select>
+                                {comparisonStates[header.key] === 'less'
+                                    ? 'Less than'
+                                    : 'Greater than'}
+                            </button>
+                            <input
+                                className="filter-input, filter-number-input"
+                                type="number"
+                                value={filters[header.key] || ''}
+                                onChange={(e) => onFilter(header.key, e.target.value)}
+                            />
                         </>
-                    ) : null}
-                    <button
-                        className="sort-button"
-                        onClick={() => handleSort(header.key)}
-                    >
-                        {sortDirection[header.key] === 'asc' ? '↑' : sortDirection[header.key] === 'desc' ? '↓' : '⇅'}
-                    </button>
+                    ) : header.key === 'type' ? (
+                        <>
+                            <select
+                                className="filter-input-sorter"
+                                onChange={(e) => handleTypeSelect(e.target.value)}
+                            >
+                                <option value="-1" disabled>Select type</option>
+                                <option value="0">DVD</option>
+                                <option value="1">VHS</option>
+                                <option value="2">BluRay</option>
+                                <option value="3">CD</option>
+                                <option value="4">Vinyl</option>
+                                <option value="5">Cassette</option>
+                                <option value="6">Digital</option>
+                                <option value="7">Other</option>
+                            </select>
+                            <div className="selected-types">
+                                {selectedTypes.map((type, index) => (
+                                    <span key={index} className="selected-type">
+                                        {indexToMediaType(type)}
+                                        <button className='type-remove-button' onClick={() => handleTypeRemove(type)}>x</button>
+                                    </span>
+                                ))}
+                            </div>
+                        </>
+                    ) : header.key === 'stock' ? (
+                        <>
+                            <div className="header-item">
+                                <button
+                                    className={`stock-button ${isInStockActive ? 'active' : ''}`}
+                                    onClick={handleInStockToggle}
+                                >
+                                    {isInStockActive ? 'Show All' : 'In Stock'}
+                                </button>
+                            </div>
+                        </>
+                    ) : header.key === 'returned' ? (
+                            <>
+                                <div className="header-item">
+                                    <button
+                                        className={`returned-button ${isInStockActive ? 'active' : ''}`}
+                                        onClick={handleInStockToggle}
+                                    >
+                                        {isInStockActive ? 'Show All' : 'Returned'}
+                                    </button>
+                                </div>
+                            </>
+                        ) : (
+                        <>
+                            <input
+                                className="filter-input"
+                                type="text"
+                                placeholder={`Filter ${header.label}`}
+                                value={filters[header.key] || ''}
+                                onChange={(e) => onFilter(header.key, e.target.value)}
+                            />
+                        </>
+                    )}
+                    <div>
+                        <span>{header.label}</span>
+                        {sortButtonCreatorWithHeaderKey(header.key)}
+                    </div>
                 </div>
             ))}
+            <div className="ghost-header">Actions</div>
         </div>
     );
 };
