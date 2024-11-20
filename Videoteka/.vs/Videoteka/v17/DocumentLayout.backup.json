@@ -1,186 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\",
+  "WorkspaceRootPath": "C:\\Users\\Antosz\\Desktop\\Videoteka_informatikairendszer\\Videoteka\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videoteka\\activeusermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|solutionrelative:videoteka\\activeusermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videoteka\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|solutionrelative:videoteka\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videoteka\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|solutionrelative:videoteka\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videoteka\\migrations\\20241112190631_useradded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\videoteka_informatikairendszer\\videoteka\\videoteka\\migrations\\20241112190631_useradded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|solutionrelative:videoteka\\migrations\\20241112190631_useradded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videoteka\\repositories\\borrowrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|solutionrelative:videoteka\\repositories\\borrowrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\videoteka_informatikairendszer\\videoteka\\videoteka\\models\\media.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|solutionrelative:videoteka\\models\\media.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videoteka\\controllers\\borrowscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|solutionrelative:videoteka\\controllers\\borrowscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videoteka\\repositories\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|solutionrelative:videoteka\\repositories\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videoteka\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|solutionrelative:videoteka\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EAEA1DC-48CD-464E-BEED-888EFF38A6EB}|VideotekaClient\\VideotekaClient.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videotekaclient\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{9EAEA1DC-48CD-464E-BEED-888EFF38A6EB}|VideotekaClient\\VideotekaClient.csproj|solutionrelative:videotekaclient\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videoteka\\repositories\\mediarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|solutionrelative:videoteka\\repositories\\mediarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videoteka\\repositories\\iloginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|solutionrelative:videoteka\\repositories\\iloginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{288EFCDD-B89F-46DA-B52F-21DEB887A85A}|Videoteka.Shared\\Videoteka.Shared.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videoteka.shared\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{288EFCDD-B89F-46DA-B52F-21DEB887A85A}|Videoteka.Shared\\Videoteka.Shared.csproj|solutionrelative:videoteka.shared\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videoteka\\appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\videoteka_informatikairendszer\\videoteka\\videoteka\\appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|solutionrelative:videoteka\\appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{288EFCDD-B89F-46DA-B52F-21DEB887A85A}|Videoteka.Shared\\Videoteka.Shared.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videoteka.shared\\models\\media.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{288EFCDD-B89F-46DA-B52F-21DEB887A85A}|Videoteka.Shared\\Videoteka.Shared.csproj|solutionrelative:videoteka.shared\\models\\media.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\videoteka_informatikairendszer\\videoteka\\videoteka\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|solutionrelative:videoteka\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videoteka\\repositories\\iclientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|solutionrelative:videoteka\\repositories\\iclientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videoteka\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\videoteka_informatikairendszer\\videoteka\\videoteka\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|solutionrelative:videoteka\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videoteka\\repositories\\imediarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|solutionrelative:videoteka\\repositories\\imediarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\videoteka_informatikairendszer\\videoteka\\videoteka\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|solutionrelative:videoteka\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videoteka\\repositories\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|solutionrelative:videoteka\\repositories\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videoteka\\controllers\\mediascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\videoteka_informatikairendszer\\videoteka\\videoteka\\controllers\\mediascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|solutionrelative:videoteka\\controllers\\mediascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videoteka\\migrations\\20241104201615_initial.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|solutionrelative:videoteka\\migrations\\20241104201615_initial.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\videoteka_informatikairendszer\\videoteka\\videoteka\\controllers\\borrowscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|solutionrelative:videoteka\\controllers\\borrowscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videoteka\\migrations\\20241104201615_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|solutionrelative:videoteka\\migrations\\20241104201615_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videoteka\\migrations\\appcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\videoteka_informatikairendszer\\videoteka\\videoteka\\migrations\\appcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|solutionrelative:videoteka\\migrations\\appcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{288EFCDD-B89F-46DA-B52F-21DEB887A85A}|Videoteka.Shared\\Videoteka.Shared.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videoteka.shared\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{288EFCDD-B89F-46DA-B52F-21DEB887A85A}|Videoteka.Shared\\Videoteka.Shared.csproj|solutionrelative:videoteka.shared\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\videoteka_informatikairendszer\\videoteka\\videoteka\\migrations\\20241104201615_initial.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|solutionrelative:videoteka\\migrations\\20241104201615_initial.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{288EFCDD-B89F-46DA-B52F-21DEB887A85A}|Videoteka.Shared\\Videoteka.Shared.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videoteka.shared\\models\\borrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{288EFCDD-B89F-46DA-B52F-21DEB887A85A}|Videoteka.Shared\\Videoteka.Shared.csproj|solutionrelative:videoteka.shared\\models\\borrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\videoteka_informatikairendszer\\videoteka\\videoteka\\migrations\\20241104201615_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|solutionrelative:videoteka\\migrations\\20241104201615_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EAEA1DC-48CD-464E-BEED-888EFF38A6EB}|VideotekaClient\\VideotekaClient.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videotekaclient\\services\\borrowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EAEA1DC-48CD-464E-BEED-888EFF38A6EB}|VideotekaClient\\VideotekaClient.csproj|solutionrelative:videotekaclient\\services\\borrowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videoteka\\repositories\\iborrowrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|solutionrelative:videoteka\\repositories\\iborrowrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EAEA1DC-48CD-464E-BEED-888EFF38A6EB}|VideotekaClient\\VideotekaClient.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videotekaclient\\services\\mediaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EAEA1DC-48CD-464E-BEED-888EFF38A6EB}|VideotekaClient\\VideotekaClient.csproj|solutionrelative:videotekaclient\\services\\mediaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EAEA1DC-48CD-464E-BEED-888EFF38A6EB}|VideotekaClient\\VideotekaClient.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videotekaclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EAEA1DC-48CD-464E-BEED-888EFF38A6EB}|VideotekaClient\\VideotekaClient.csproj|solutionrelative:videotekaclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videoteka\\videoteka.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|solutionrelative:videoteka\\videoteka.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EAEA1DC-48CD-464E-BEED-888EFF38A6EB}|VideotekaClient\\VideotekaClient.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videotekaclient\\videotekaclient.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{9EAEA1DC-48CD-464E-BEED-888EFF38A6EB}|VideotekaClient\\VideotekaClient.csproj|solutionrelative:videotekaclient\\videotekaclient.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EAEA1DC-48CD-464E-BEED-888EFF38A6EB}|VideotekaClient\\VideotekaClient.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videotekaclient\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9EAEA1DC-48CD-464E-BEED-888EFF38A6EB}|VideotekaClient\\VideotekaClient.csproj|solutionrelative:videotekaclient\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EAEA1DC-48CD-464E-BEED-888EFF38A6EB}|VideotekaClient\\VideotekaClient.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videotekaclient\\pages\\clientlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9EAEA1DC-48CD-464E-BEED-888EFF38A6EB}|VideotekaClient\\VideotekaClient.csproj|solutionrelative:videotekaclient\\pages\\clientlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EAEA1DC-48CD-464E-BEED-888EFF38A6EB}|VideotekaClient\\VideotekaClient.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videotekaclient\\pages\\addclient.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9EAEA1DC-48CD-464E-BEED-888EFF38A6EB}|VideotekaClient\\VideotekaClient.csproj|solutionrelative:videotekaclient\\pages\\addclient.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EAEA1DC-48CD-464E-BEED-888EFF38A6EB}|VideotekaClient\\VideotekaClient.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videotekaclient\\videotekaclient.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{9EAEA1DC-48CD-464E-BEED-888EFF38A6EB}|VideotekaClient\\VideotekaClient.csproj|solutionrelative:videotekaclient\\videotekaclient.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{288EFCDD-B89F-46DA-B52F-21DEB887A85A}|Videoteka.Shared\\Videoteka.Shared.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videoteka.shared\\videoteka.shared.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{288EFCDD-B89F-46DA-B52F-21DEB887A85A}|Videoteka.Shared\\Videoteka.Shared.csproj|solutionrelative:videoteka.shared\\videoteka.shared.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EAEA1DC-48CD-464E-BEED-888EFF38A6EB}|VideotekaClient\\VideotekaClient.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videotekaclient\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9EAEA1DC-48CD-464E-BEED-888EFF38A6EB}|VideotekaClient\\VideotekaClient.csproj|solutionrelative:videotekaclient\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EAEA1DC-48CD-464E-BEED-888EFF38A6EB}|VideotekaClient\\VideotekaClient.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videotekaclient\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EAEA1DC-48CD-464E-BEED-888EFF38A6EB}|VideotekaClient\\VideotekaClient.csproj|solutionrelative:videotekaclient\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EAEA1DC-48CD-464E-BEED-888EFF38A6EB}|VideotekaClient\\VideotekaClient.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videotekaclient\\services\\imediaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EAEA1DC-48CD-464E-BEED-888EFF38A6EB}|VideotekaClient\\VideotekaClient.csproj|solutionrelative:videotekaclient\\services\\imediaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EAEA1DC-48CD-464E-BEED-888EFF38A6EB}|VideotekaClient\\VideotekaClient.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videotekaclient\\services\\iborrowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EAEA1DC-48CD-464E-BEED-888EFF38A6EB}|VideotekaClient\\VideotekaClient.csproj|solutionrelative:videotekaclient\\services\\iborrowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EAEA1DC-48CD-464E-BEED-888EFF38A6EB}|VideotekaClient\\VideotekaClient.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videotekaclient\\services\\iclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EAEA1DC-48CD-464E-BEED-888EFF38A6EB}|VideotekaClient\\VideotekaClient.csproj|solutionrelative:videotekaclient\\services\\iclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EAEA1DC-48CD-464E-BEED-888EFF38A6EB}|VideotekaClient\\VideotekaClient.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videotekaclient\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9EAEA1DC-48CD-464E-BEED-888EFF38A6EB}|VideotekaClient\\VideotekaClient.csproj|solutionrelative:videotekaclient\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{288EFCDD-B89F-46DA-B52F-21DEB887A85A}|Videoteka.Shared\\Videoteka.Shared.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videoteka.shared\\models\\releasedatenotinpastattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{288EFCDD-B89F-46DA-B52F-21DEB887A85A}|Videoteka.Shared\\Videoteka.Shared.csproj|solutionrelative:videoteka.shared\\models\\releasedatenotinpastattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{288EFCDD-B89F-46DA-B52F-21DEB887A85A}|Videoteka.Shared\\Videoteka.Shared.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videoteka.shared\\models\\whitespaceandnullverification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{288EFCDD-B89F-46DA-B52F-21DEB887A85A}|Videoteka.Shared\\Videoteka.Shared.csproj|solutionrelative:videoteka.shared\\models\\whitespaceandnullverification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{288EFCDD-B89F-46DA-B52F-21DEB887A85A}|Videoteka.Shared\\Videoteka.Shared.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videoteka.shared\\models\\returndateafterborrowdateattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{288EFCDD-B89F-46DA-B52F-21DEB887A85A}|Videoteka.Shared\\Videoteka.Shared.csproj|solutionrelative:videoteka.shared\\models\\returndateafterborrowdateattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\5.f\u00E9l\u00E9v\\videoteka_informatikairendszer\\videoteka\\videoteka\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|solutionrelative:videoteka\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|c:\\users\\antosz\\desktop\\videoteka_informatikairendszer\\videoteka\\videoteka\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5158A390-88EB-4EAE-BE1A-C05644C2630A}|Videoteka\\Videoteka.csproj|solutionrelative:videoteka\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -195,563 +63,157 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ActiveUserMiddleware.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\ActiveUserMiddleware.cs",
-              "RelativeDocumentMoniker": "Videoteka\\ActiveUserMiddleware.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\ActiveUserMiddleware.cs",
-              "RelativeToolTip": "Videoteka\\ActiveUserMiddleware.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T19:16:31.8Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "20241112190631_UserAdded.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Migrations\\20241112190631_UserAdded.cs",
+              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Migrations\\20241112190631_UserAdded.cs",
               "RelativeDocumentMoniker": "Videoteka\\Migrations\\20241112190631_UserAdded.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Migrations\\20241112190631_UserAdded.cs",
+              "ToolTip": "C:\\Users\\Antosz\\Desktop\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Migrations\\20241112190631_UserAdded.cs",
               "RelativeToolTip": "Videoteka\\Migrations\\20241112190631_UserAdded.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAiwB4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T19:08:13.33Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LoginRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Repositories\\LoginRepository.cs",
-              "RelativeDocumentMoniker": "Videoteka\\Repositories\\LoginRepository.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Repositories\\LoginRepository.cs",
-              "RelativeToolTip": "Videoteka\\Repositories\\LoginRepository.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAA9wAIAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T18:43:39.389Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka.Shared\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Videoteka.Shared\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka.Shared\\Models\\User.cs",
-              "RelativeToolTip": "Videoteka.Shared\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T18:40:04.385Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ILoginRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Repositories\\ILoginRepository.cs",
-              "RelativeDocumentMoniker": "Videoteka\\Repositories\\ILoginRepository.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Repositories\\ILoginRepository.cs",
-              "RelativeToolTip": "Videoteka\\Repositories\\ILoginRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T18:38:25.14Z",
+              "WhenOpened": "2024-11-20T13:10:47.38Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "Videoteka\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "Videoteka\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAkwBsAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T18:30:14.955Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "20241104201615_Initial.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Migrations\\20241104201615_Initial.Designer.cs",
-              "RelativeDocumentMoniker": "Videoteka\\Migrations\\20241104201615_Initial.Designer.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Migrations\\20241104201615_Initial.Designer.cs",
-              "RelativeToolTip": "Videoteka\\Migrations\\20241104201615_Initial.Designer.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T18:26:17.494Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "AppContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Migrations\\AppContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "Videoteka\\Migrations\\AppContextModelSnapshot.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Migrations\\AppContextModelSnapshot.cs",
-              "RelativeToolTip": "Videoteka\\Migrations\\AppContextModelSnapshot.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T18:25:33.717Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "20241104201615_Initial.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Migrations\\20241104201615_Initial.cs",
-              "RelativeDocumentMoniker": "Videoteka\\Migrations\\20241104201615_Initial.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Migrations\\20241104201615_Initial.cs",
-              "RelativeToolTip": "Videoteka\\Migrations\\20241104201615_Initial.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAgwEEAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T21:16:22.319Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Home.razor",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\Pages\\Home.razor",
-              "RelativeDocumentMoniker": "VideotekaClient\\Pages\\Home.razor",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\Pages\\Home.razor",
-              "RelativeToolTip": "VideotekaClient\\Pages\\Home.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-06T00:00:35.024Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "VideotekaClient\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\Properties\\launchSettings.json",
-              "RelativeToolTip": "VideotekaClient\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-05T23:52:38.203Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "VideotekaClient",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\VideotekaClient.csproj",
-              "RelativeDocumentMoniker": "VideotekaClient\\VideotekaClient.csproj",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\VideotekaClient.csproj",
-              "RelativeToolTip": "VideotekaClient\\VideotekaClient.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-05T23:52:34.11Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\wwwroot\\index.html",
-              "RelativeDocumentMoniker": "VideotekaClient\\wwwroot\\index.html",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\wwwroot\\index.html",
-              "RelativeToolTip": "VideotekaClient\\wwwroot\\index.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-11-05T23:52:30.825Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "MediaService.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\Services\\MediaService.cs",
-              "RelativeDocumentMoniker": "VideotekaClient\\Services\\MediaService.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\Services\\MediaService.cs",
-              "RelativeToolTip": "VideotekaClient\\Services\\MediaService.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T23:48:25.103Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "BorrowService.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\Services\\BorrowService.cs",
-              "RelativeDocumentMoniker": "VideotekaClient\\Services\\BorrowService.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\Services\\BorrowService.cs",
-              "RelativeToolTip": "VideotekaClient\\Services\\BorrowService.cs",
+              "Title": "Media.cs",
+              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Models\\Media.cs",
+              "RelativeDocumentMoniker": "Videoteka\\Models\\Media.cs",
+              "ToolTip": "C:\\Users\\Antosz\\Desktop\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Models\\Media.cs",
+              "RelativeToolTip": "Videoteka\\Models\\Media.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T23:46:51.722Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "IMediaService.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\Services\\IMediaService.cs",
-              "RelativeDocumentMoniker": "VideotekaClient\\Services\\IMediaService.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\Services\\IMediaService.cs",
-              "RelativeToolTip": "VideotekaClient\\Services\\IMediaService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T23:46:43.342Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "IBorrowService.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\Services\\IBorrowService.cs",
-              "RelativeDocumentMoniker": "VideotekaClient\\Services\\IBorrowService.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\Services\\IBorrowService.cs",
-              "RelativeToolTip": "VideotekaClient\\Services\\IBorrowService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T23:46:39.24Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "IClientService.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\Services\\IClientService.cs",
-              "RelativeDocumentMoniker": "VideotekaClient\\Services\\IClientService.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\Services\\IClientService.cs",
-              "RelativeToolTip": "VideotekaClient\\Services\\IClientService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T23:44:25.854Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "NavMenu.razor",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\Layout\\NavMenu.razor",
-              "RelativeDocumentMoniker": "VideotekaClient\\Layout\\NavMenu.razor",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\Layout\\NavMenu.razor",
-              "RelativeToolTip": "VideotekaClient\\Layout\\NavMenu.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-05T23:39:47.722Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "AddClient.razor",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\Pages\\AddClient.razor",
-              "RelativeDocumentMoniker": "VideotekaClient\\Pages\\AddClient.razor",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\Pages\\AddClient.razor",
-              "RelativeToolTip": "VideotekaClient\\Pages\\AddClient.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-05T23:39:35.493Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "ClientList.razor",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\Pages\\ClientList.razor",
-              "RelativeDocumentMoniker": "VideotekaClient\\Pages\\ClientList.razor",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\Pages\\ClientList.razor",
-              "RelativeToolTip": "VideotekaClient\\Pages\\ClientList.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-05T23:37:58.213Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "ClientService.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\Services\\ClientService.cs",
-              "RelativeDocumentMoniker": "VideotekaClient\\Services\\ClientService.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\Services\\ClientService.cs",
-              "RelativeToolTip": "VideotekaClient\\Services\\ClientService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T23:35:49.653Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Videoteka.Shared.csproj",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka.Shared\\Videoteka.Shared.csproj",
-              "RelativeDocumentMoniker": "Videoteka.Shared\\Videoteka.Shared.csproj",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka.Shared\\Videoteka.Shared.csproj",
-              "RelativeToolTip": "Videoteka.Shared\\Videoteka.Shared.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-05T23:30:58.418Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "WhiteSpaceAndNullVerification.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka.Shared\\Models\\WhiteSpaceAndNullVerification.cs",
-              "RelativeDocumentMoniker": "Videoteka.Shared\\Models\\WhiteSpaceAndNullVerification.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka.Shared\\Models\\WhiteSpaceAndNullVerification.cs",
-              "RelativeToolTip": "Videoteka.Shared\\Models\\WhiteSpaceAndNullVerification.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T23:28:00.933Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "VideotekaClient.csproj",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\VideotekaClient.csproj",
-              "RelativeDocumentMoniker": "VideotekaClient\\VideotekaClient.csproj",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\VideotekaClient.csproj",
-              "RelativeToolTip": "VideotekaClient\\VideotekaClient.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABNAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-05T23:27:58.901Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "ReturnDateAfterBorrowDateAttribute.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka.Shared\\Models\\ReturnDateAfterBorrowDateAttribute.cs",
-              "RelativeDocumentMoniker": "Videoteka.Shared\\Models\\ReturnDateAfterBorrowDateAttribute.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka.Shared\\Models\\ReturnDateAfterBorrowDateAttribute.cs",
-              "RelativeToolTip": "Videoteka.Shared\\Models\\ReturnDateAfterBorrowDateAttribute.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T23:27:57.967Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "ReleaseDateNotInPastAttribute.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka.Shared\\Models\\ReleaseDateNotInPastAttribute.cs",
-              "RelativeDocumentMoniker": "Videoteka.Shared\\Models\\ReleaseDateNotInPastAttribute.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka.Shared\\Models\\ReleaseDateNotInPastAttribute.cs",
-              "RelativeToolTip": "Videoteka.Shared\\Models\\ReleaseDateNotInPastAttribute.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T23:27:54.403Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Media.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka.Shared\\Models\\Media.cs",
-              "RelativeDocumentMoniker": "Videoteka.Shared\\Models\\Media.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka.Shared\\Models\\Media.cs",
-              "RelativeToolTip": "Videoteka.Shared\\Models\\Media.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T23:27:50.667Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Client.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka.Shared\\Models\\Client.cs",
-              "RelativeDocumentMoniker": "Videoteka.Shared\\Models\\Client.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka.Shared\\Models\\Client.cs",
-              "RelativeToolTip": "Videoteka.Shared\\Models\\Client.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAYwBgAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T23:27:43.839Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Borrow.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka.Shared\\Models\\Borrow.cs",
-              "RelativeDocumentMoniker": "Videoteka.Shared\\Models\\Borrow.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka.Shared\\Models\\Borrow.cs",
-              "RelativeToolTip": "Videoteka.Shared\\Models\\Borrow.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAYwB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T23:27:28.943Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Videoteka\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Videoteka\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-05T23:24:08.505Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Videoteka.csproj",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Videoteka.csproj",
-              "RelativeDocumentMoniker": "Videoteka\\Videoteka.csproj",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Videoteka.csproj",
-              "RelativeToolTip": "Videoteka\\Videoteka.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-05T23:23:56.463Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\appsettings.json",
-              "RelativeDocumentMoniker": "Videoteka\\appsettings.json",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\appsettings.json",
-              "RelativeToolTip": "Videoteka\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-05T23:23:47.447Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\Program.cs",
-              "RelativeDocumentMoniker": "VideotekaClient\\Program.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\VideotekaClient\\Program.cs",
-              "RelativeToolTip": "VideotekaClient\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T23:23:24.402Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BorrowRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Repositories\\BorrowRepository.cs",
-              "RelativeDocumentMoniker": "Videoteka\\Repositories\\BorrowRepository.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Repositories\\BorrowRepository.cs",
-              "RelativeToolTip": "Videoteka\\Repositories\\BorrowRepository.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAwwBIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T20:41:08.508Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MediaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Repositories\\MediaRepository.cs",
-              "RelativeDocumentMoniker": "Videoteka\\Repositories\\MediaRepository.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Repositories\\MediaRepository.cs",
-              "RelativeToolTip": "Videoteka\\Repositories\\MediaRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T20:40:52.2Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ClientRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Repositories\\ClientRepository.cs",
-              "RelativeDocumentMoniker": "Videoteka\\Repositories\\ClientRepository.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Repositories\\ClientRepository.cs",
-              "RelativeToolTip": "Videoteka\\Repositories\\ClientRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T20:34:02.664Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "IBorrowRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Repositories\\IBorrowRepository.cs",
-              "RelativeDocumentMoniker": "Videoteka\\Repositories\\IBorrowRepository.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Repositories\\IBorrowRepository.cs",
-              "RelativeToolTip": "Videoteka\\Repositories\\IBorrowRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T20:38:30.162Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "IMediaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Repositories\\IMediaRepository.cs",
-              "RelativeDocumentMoniker": "Videoteka\\Repositories\\IMediaRepository.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Repositories\\IMediaRepository.cs",
-              "RelativeToolTip": "Videoteka\\Repositories\\IMediaRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T20:39:04.156Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "IClientRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Repositories\\IClientRepository.cs",
-              "RelativeDocumentMoniker": "Videoteka\\Repositories\\IClientRepository.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Repositories\\IClientRepository.cs",
-              "RelativeToolTip": "Videoteka\\Repositories\\IClientRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T20:34:07.264Z",
+              "WhenOpened": "2024-11-20T13:10:34.297Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Program.cs",
-              "RelativeDocumentMoniker": "Videoteka\\Program.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Program.cs",
-              "RelativeToolTip": "Videoteka\\Program.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwCUAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T20:39:28.589Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "AppContext.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\AppContext.cs",
+              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\AppContext.cs",
               "RelativeDocumentMoniker": "Videoteka\\AppContext.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\AppContext.cs",
+              "ToolTip": "C:\\Users\\Antosz\\Desktop\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\AppContext.cs",
               "RelativeToolTip": "Videoteka\\AppContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T20:39:23.244Z",
+              "WhenOpened": "2024-11-20T13:10:29.657Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "MediasController.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Controllers\\MediasController.cs",
-              "RelativeDocumentMoniker": "Videoteka\\Controllers\\MediasController.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Controllers\\MediasController.cs",
-              "RelativeToolTip": "Videoteka\\Controllers\\MediasController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Program.cs",
+              "RelativeDocumentMoniker": "Videoteka\\Program.cs",
+              "ToolTip": "C:\\Users\\Antosz\\Desktop\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Program.cs",
+              "RelativeToolTip": "Videoteka\\Program.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwCMAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T20:27:33.469Z",
+              "WhenOpened": "2024-11-20T13:09:59.689Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "BorrowsController.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Controllers\\BorrowsController.cs",
-              "RelativeDocumentMoniker": "Videoteka\\Controllers\\BorrowsController.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Controllers\\BorrowsController.cs",
-              "RelativeToolTip": "Videoteka\\Controllers\\BorrowsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Videoteka\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\Antosz\\Desktop\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Videoteka\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T20:26:57.383Z",
+              "WhenOpened": "2024-11-20T13:09:56.427Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ClientsController.cs",
-              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Controllers\\ClientsController.cs",
-              "RelativeDocumentMoniker": "Videoteka\\Controllers\\ClientsController.cs",
-              "ToolTip": "C:\\Users\\Antosz\\Desktop\\5.f\u00E9l\u00E9v\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Controllers\\ClientsController.cs",
-              "RelativeToolTip": "Videoteka\\Controllers\\ClientsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "MediasController.cs",
+              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Controllers\\MediasController.cs",
+              "RelativeDocumentMoniker": "Videoteka\\Controllers\\MediasController.cs",
+              "ToolTip": "C:\\Users\\Antosz\\Desktop\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Controllers\\MediasController.cs",
+              "RelativeToolTip": "Videoteka\\Controllers\\MediasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T20:26:34.018Z",
+              "WhenOpened": "2024-11-20T13:09:55.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BorrowsController.cs",
+              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Controllers\\BorrowsController.cs",
+              "RelativeDocumentMoniker": "Videoteka\\Controllers\\BorrowsController.cs",
+              "ToolTip": "C:\\Users\\Antosz\\Desktop\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Controllers\\BorrowsController.cs",
+              "RelativeToolTip": "Videoteka\\Controllers\\BorrowsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T13:09:52.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ClientsController.cs",
+              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Controllers\\ClientsController.cs",
+              "RelativeDocumentMoniker": "Videoteka\\Controllers\\ClientsController.cs",
+              "ToolTip": "C:\\Users\\Antosz\\Desktop\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Controllers\\ClientsController.cs",
+              "RelativeToolTip": "Videoteka\\Controllers\\ClientsController.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAA0wEgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T13:09:34.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AppContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Migrations\\AppContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Videoteka\\Migrations\\AppContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Antosz\\Desktop\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Migrations\\AppContextModelSnapshot.cs",
+              "RelativeToolTip": "Videoteka\\Migrations\\AppContextModelSnapshot.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAgwEIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T13:08:43.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20241104201615_Initial.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Migrations\\20241104201615_Initial.Designer.cs",
+              "RelativeDocumentMoniker": "Videoteka\\Migrations\\20241104201615_Initial.Designer.cs",
+              "ToolTip": "C:\\Users\\Antosz\\Desktop\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Migrations\\20241104201615_Initial.Designer.cs",
+              "RelativeToolTip": "Videoteka\\Migrations\\20241104201615_Initial.Designer.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAgwEkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T13:08:28.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20241104201615_Initial.cs",
+              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Migrations\\20241104201615_Initial.cs",
+              "RelativeDocumentMoniker": "Videoteka\\Migrations\\20241104201615_Initial.cs",
+              "ToolTip": "C:\\Users\\Antosz\\Desktop\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Migrations\\20241104201615_Initial.cs",
+              "RelativeToolTip": "Videoteka\\Migrations\\20241104201615_Initial.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAgwDIAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T13:08:01.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\Antosz\\Desktop\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "Videoteka\\Models\\Client.cs",
+              "ToolTip": "C:\\Users\\Antosz\\Desktop\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Models\\Client.cs",
+              "RelativeToolTip": "Videoteka\\Models\\Client.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T13:07:46.422Z",
               "EditorCaption": ""
             }
           ]

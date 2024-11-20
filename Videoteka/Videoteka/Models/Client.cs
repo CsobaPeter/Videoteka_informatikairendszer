@@ -26,6 +26,6 @@ namespace Videoteka.Models
 
         [Required]
         [Phone]
-        public int PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
     }
 }

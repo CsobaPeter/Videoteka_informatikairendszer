@@ -48,7 +48,7 @@ namespace Videoteka.Migrations
                     Name = table.Column<string>(type: "TEXT", maxLength: 15, nullable: false),
                     Address = table.Column<string>(type: "TEXT", nullable: false),
                     Email = table.Column<string>(type: "TEXT", maxLength: 50, nullable: false),
-                    PhoneNumber = table.Column<int>(type: "INTEGER", nullable: false)
+                    PhoneNumber = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {

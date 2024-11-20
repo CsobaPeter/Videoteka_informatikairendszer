@@ -13,39 +13,39 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = VideotekaClient
 build_property.RootNamespace = VideotekaClient
-build_property.ProjectDir = C:\Users\Antosz\Desktop\5.félév\Videoteka_informatikairendszer\Videoteka\VideotekaClient\
+build_property.ProjectDir = C:\Users\Antosz\Desktop\Videoteka_informatikairendszer\Videoteka\VideotekaClient\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Antosz\Desktop\5.félév\Videoteka_informatikairendszer\Videoteka\VideotekaClient
+build_property.MSBuildProjectDirectory = C:\Users\Antosz\Desktop\Videoteka_informatikairendszer\Videoteka\VideotekaClient
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Antosz/Desktop/5.félév/Videoteka_informatikairendszer/Videoteka/VideotekaClient/App.razor]
+[C:/Users/Antosz/Desktop/Videoteka_informatikairendszer/Videoteka/VideotekaClient/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Antosz/Desktop/5.félév/Videoteka_informatikairendszer/Videoteka/VideotekaClient/Pages/AddClient.razor]
+[C:/Users/Antosz/Desktop/Videoteka_informatikairendszer/Videoteka/VideotekaClient/Pages/AddClient.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkQ2xpZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Antosz/Desktop/5.félév/Videoteka_informatikairendszer/Videoteka/VideotekaClient/Pages/ClientList.razor]
+[C:/Users/Antosz/Desktop/Videoteka_informatikairendszer/Videoteka/VideotekaClient/Pages/ClientList.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50TGlzdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Antosz/Desktop/5.félév/Videoteka_informatikairendszer/Videoteka/VideotekaClient/Pages/Home.razor]
+[C:/Users/Antosz/Desktop/Videoteka_informatikairendszer/Videoteka/VideotekaClient/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Antosz/Desktop/5.félév/Videoteka_informatikairendszer/Videoteka/VideotekaClient/_Imports.razor]
+[C:/Users/Antosz/Desktop/Videoteka_informatikairendszer/Videoteka/VideotekaClient/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Antosz/Desktop/5.félév/Videoteka_informatikairendszer/Videoteka/VideotekaClient/Layout/MainLayout.razor]
+[C:/Users/Antosz/Desktop/Videoteka_informatikairendszer/Videoteka/VideotekaClient/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-i7dadtghor
 
-[C:/Users/Antosz/Desktop/5.félév/Videoteka_informatikairendszer/Videoteka/VideotekaClient/Layout/NavMenu.razor]
+[C:/Users/Antosz/Desktop/Videoteka_informatikairendszer/Videoteka/VideotekaClient/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-s24yx1xnab

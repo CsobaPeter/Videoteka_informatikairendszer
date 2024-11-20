@@ -72,13 +72,6 @@ namespace Videoteka.Controllers
                 return BadRequest();
             }
 
-            var existingClient = await _clientRepo.Get(id);
-
-            if (existingClient is null)
-            {
-                return NotFound();
-            }
-
             await _clientRepo.Update(newClient);
 
             return Ok();

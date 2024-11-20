@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Videoteka")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c68853501a8be344a5302a3de7484dbc5f4eabe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+94d212e34809aa1d07618a0fdce83237ac8e263f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Videoteka")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Videoteka")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
