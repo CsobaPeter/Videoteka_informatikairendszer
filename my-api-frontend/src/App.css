@@ -1,9 +1,11 @@
-/* Global settings for font, colors, and layout */
+/* Globális beállítások */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f4f4f9;
-  color: #333;
+  background-color: #f9f9fb;
+  color: #2c3e50;
   margin: 0;
+  line-height: 1.6;
+  word-wrap: break-word; /* Szavak tördelése hosszú szöveg esetén */
 }
 
 .container {
@@ -17,324 +19,255 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #007bff;
-  color: white;
-  padding: 1rem;
+  background-color: #34495e;
+  color: #ecf0f1;
+  padding: 1rem 2rem;
   font-size: 1.2rem;
-  border-bottom: 4px solid #0056b3;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
 }
 
 .navbar h1 {
   margin: 0;
   font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .navbar ul {
   display: flex;
-  gap: 1.5rem;
+  gap: 5.5rem;
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-links{
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 5.5rem;
+  list-style-type: none;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .navbar ul li {
   font-weight: bold;
+  cursor: pointer;
+}
+
+.navbar ul li:hover {
+  text-decoration: underline;
 }
 
 /* Card */
 .card {
   background: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   margin: 16px 0;
-  padding: 1rem;
-  transition: transform 0.2s;
+  padding: 1.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+  word-wrap: break-word;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card-header {
   display: flex;
   justify-content: space-between;
   font-weight: bold;
+  font-size: 1.2rem;
+  color: #34495e;
+  gap: 1rem;
 }
 
-/* Filter and Search */
+/* Filter és keresés */
 .filter-group,
 .filter-container {
   display: flex;
-  gap: 8px;
-  margin-top: 1rem;
+  gap: 12px;
+  margin: 1rem 0;
+  flex-wrap: wrap; /* Tördelje a szűrőket, ha túl hosszúak */
 }
 
 .filter-input,
 .sort-button,
-.filter-input:focus,
-.comparison-button-default{
-  padding: 0.5rem;
-  border-radius: 6px;
-  border: 1px solid #ddd;
-  transition: border-color 0.65s;
-}
-.filter-number-input {
-  width: 50px;
+.filter-input:focus {
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #dcdde1;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-.filter-input:focus,
-.sort-button:hover {
-  border-color: #007bff;
+.filter-input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
 }
 
 .sort-button {
+  background-color: #ecf0f1;
+  border: 1px solid #bdc3c7;
+  color: #2c3e50;
   cursor: pointer;
-  background-color: #f0f0f0;
-  border: 1px solid #ddd;
-  color: #555;
-  padding: 0.5rem 0.8rem;
-  margin: 10px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.comparison-button-default {
-  cursor: pointer;
-  background-color: #f0f0f0;
-  border: 1px solid #ddd;
-  color: #555;
-  padding: 0.5rem 0.8rem;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.sort-button:hover, .comparison-button-default:hover {
-  background-color: #007bff;
+.sort-button:hover {
+  background-color: #3498db;
   color: white;
 }
 
-/* Buttons */
+/* Gombok */
 .modify-button,
 .delete-button {
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
   border: none;
   cursor: pointer;
   font-weight: bold;
-  transition: background 0.2s;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .modify-button {
-  background-color: #007bff;
+  background-color: #27ae60;
   color: white;
 }
 
 .modify-button:hover {
-  background-color: #0056b3;
+  background-color: #2ecc71;
+  transform: scale(1.05);
 }
 
 .delete-button {
-  background-color: #dc3545;
+  background-color: #e74c3c;
   color: white;
 }
 
 .delete-button:hover {
-  background-color: #c82333;
+  background-color: #c0392b;
+  transform: scale(1.05);
 }
 
-/* Add Form */
+/* Űrlapok */
 .add-form {
   max-width: 600px;
-  margin: auto;
+  margin: 2rem auto;
   padding: 2rem;
   background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .add-form .form-group {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .add-form input,
 .add-form select {
   width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  margin-top: 0.2rem;
+  padding: 0.7rem;
+  border: 1px solid #dcdde1;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  transition: border-color 0.3s;
+}
+
+.add-form input:focus,
+.add-form select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
 }
 
 .add-form button {
   width: 100%;
-  background-color: #007bff;
+  background-color: #34495e;
   color: white;
   border: none;
-  padding: 0.7rem;
+  padding: 0.9rem;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .add-form button:hover {
-  background-color: #0056b3;
+  background-color: #2c3e50;
+  transform: scale(1.02);
 }
 
-/* General list-page styling */
-.list-page {
-  padding: 2rem;
-}
-
-/* Header Row styling */
-.header-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1.5rem;
-}
-
-/* Table styling with card-like rows */
+/* Táblázatok */
 .table {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
+.table-header,
 .table-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Dynamically adjust columns */
-  gap: 1rem; /* Add space between columns */
-  align-items: center; /* Align items vertically */
-  background-color: white;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.table-row .form-field,
-.table-row .form-buttons {
-  text-align: center;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap; /* Prevent wrapping */
-}
-
-.form-buttons {
-  display: flex;
-  gap: 0.5rem;
-  justify-content: center;
-}
-
-button {
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.header-item {
-
-}
-
-.table-row:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* Header and content cells */
-.header-cell {
-  font-weight: bold;
-  color: #333;
-  font-size: 1.1rem;
-  padding: 0.5rem;
-}
-
-.form-field {
-  margin: 0.5rem;
-  padding: 0.5rem;
-  font-size: 1rem;
-  color: #555;
 }
 
 .table-header {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Match .table-row */
-  gap: 1rem;
-  padding: 1rem;
   background-color: #f0f0f0;
-  border-radius: 8px;
   font-weight: bold;
   text-align: center;
 }
 
-.table-header span,
-.table-header .ghost-header {
-  text-align: center;
-  font-size: 0.9rem;
-  color: #333;
-}
-
-.table-header .ghost-header {
-  visibility: hidden; /* Makes the "Edit/Delete" header invisible but reserves space */
-}
-
 .table-row {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Dynamically adjust columns */
-  gap: 1rem;
-  align-items: center;
   background-color: white;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.table-row .form-field,
-.table-row .form-buttons {
-  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
-.form-buttons {
-  display: flex;
-  gap: 0.5rem;
-  justify-content: center;
+.table-row:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Modal Styles */
+/* Modal */
 .modal {
-  position: fixed;  /* Fix the modal to the viewport */
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent dark background */
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
-  justify-content: center;  /* Center horizontally */
-  align-items: center;  /* Center vertically */
-  z-index: 1000;  /* Ensure the modal is above other content */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 
 .modal-content {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   text-align: center;
-  width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Optional shadow for a 3D effect */
+  width: 400px;
 }
 
 .modal-buttons button {
   margin: 10px;
-  padding: 10px 20px;
-  background-color: #007bff;
+  padding: 0.7rem 1.5rem;
+  background-color: #3498db;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .modal-buttons button:hover {
-  background-color: #0056b3;
+  background-color: #2980b9;
+  transform: scale(1.05);
 }
