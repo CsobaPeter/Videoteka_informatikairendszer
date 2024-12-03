@@ -1,0 +1,8 @@
+testLogin:
+1. Log in to instance - Login successful
+
+testAddClient
+1. Log in to instance - Login successful
+2. Click on Add client navbar item - Add client page appears
+3. Fill infos and finish adding client - Clients page is displayed
+4. Check the client in list - Client is in the list
