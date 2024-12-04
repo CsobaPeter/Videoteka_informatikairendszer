@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, {useContext, useState} from 'react';
+import {AuthContext} from "../../UserManagement/AuthContext";
+import {useNavigate} from "react-router-dom";
 
 const ListHeader = ({
                         headers,
@@ -6,11 +8,15 @@ const ListHeader = ({
                         onSort,
                         filters,
                         sortConfig,
-                        indexToMediaType
+                        indexToMediaType,
+                        model,
+                        ghostHeaderNeeded
                     }) => {
     const [selectedTypes, setSelectedTypes] = useState([]);
     const [isInStockActive, setIsInStockActive] = useState(false); // Track the toggle state for the "In Stock" button
     const [comparisonStates, setComparisonStates] = useState({}); // Store toggle states for comparison buttons
+    const { auth } = useContext(AuthContext);
+    const navigate = useNavigate();
 
     // Handle toggling the "In Stock" button
     const handleInStockToggle = () => {
@@ -150,7 +156,20 @@ const ListHeader = ({
                     </div>
                 </div>
             ))}
-            <div className="ghost-header">Actions</div>
+            {(auth.userRole === 0 || auth.userRole === 2) ? (
+                <div className="header-item">
+                    <button
+                        className="add-button"
+                        onClick={() => navigate(`/${model}/add`)}
+                    >
+                        Add New
+                    </button>
+                </div>
+            ) : (auth.userRole !== null ? (
+                <div className="ghost-header">Actions</div>
+                ): null)
+            }
+
         </div>
     );
 };
