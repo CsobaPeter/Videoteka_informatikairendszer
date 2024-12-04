@@ -1,8 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import BorrowService from './BorrowService';
-import ClientService from '../ClientF/ClientService';
-import MediaService from '../Media/MediaService';
-import ListHeader from '../components/ListHeader';
+import React, { useState, useEffect, useContext } from 'react';
+import BorrowsService from './BorrowsService';
+import ClientsService from '../Client/ClientsService';
+import MediasService from '../Media/MediasService';
+import ListHeader from '../components/table/ListHeader';
+import { AuthContext } from "../UserManagement/AuthContext";
+import '../App.css';
+import {useNavigate} from "react-router-dom";
+import Modal from "../components/form/Modal";
+
 
 // Filter logic
 const filterBorrowList = (borrows, filters) => {
@@ -35,8 +40,15 @@ const filterBorrowList = (borrows, filters) => {
             return borrowReturnDate.getTime() === filterReturnDate.getTime();
         });
     }
+
     if (filters.returned) {
         filtered = filtered.filter(borrow => borrow.returned === true);
+    }
+
+    if (filters.price) {
+        filtered = filtered.filter(borrow =>
+            borrow.price.toString().toLowerCase().includes(filters.price.toLowerCase())
+        );
     }
 
     return filtered;
@@ -54,46 +66,49 @@ const sortBorrowList = (borrows, sortConfig) => {
     });
 };
 
-// Table row component
-const TableRow = ({ borrow, onEdit, onDelete }) => (
-    <div className="table-row">
-        <div className="form-field">{borrow.clientId}</div>
-        <div className="form-field">{borrow.mediaId}</div>
-        <div className="form-field">{borrow.borrowDate}</div>
-        <div className="form-field">{borrow.returnDate}</div>
-        <div className="form-field">{borrow.returned}</div>
-        <div className="form-buttons">
-            <button className="modify-button" onClick={() => onEdit(borrow.borrowId)}>
-                Edit
-            </button>
-            <button className="delete-button" onClick={() => onDelete(borrow.borrowId)}>
-                Delete
-            </button>
-        </div>
-    </div>
-);
-
 const BorrowLister = () => {
-  const [borrows, setBorrows] = useState([]);
-  const [filteredBorrows, setFilteredBorrows] = useState([]);
-  const [clients, setClients] = useState([]);
-  const [medias, setMedias] = useState([]);
-  const [filters, setFilters] = useState({
-    clientId: '',
-      mediaId: '',
-      borrowDate: '',
-    returnDate: '',
-    returned: ''
-  });
-  const [sortConfig, setSortConfig] = useState({
-      key: 'borrowDate', direction: 'asc'
-  });
+    const { auth } = useContext(AuthContext);
+    const navigate = useNavigate();
+    const borrowService = BorrowsService(auth.username);
+    const mediaService = MediasService(auth.username);
+    const clientService = ClientsService(auth.username);
+    const [borrows, setBorrows] = useState([]);
+    const [medias, setMedias] = useState([]);
+    const [clients, setClients] = useState([]);
+    const [filteredBorrows, setFilteredBorrows] = useState([]);
+    const [filters, setFilters] = useState({
+        borrowId: '',
+        clientId: '',
+        mediaId: '',
+        borrowDate: '',
+        returnDate: '',
+        returned: '',
+        hasBeenExtended: '',
+        price: '',
+    });
+    const [sortConfig, setSortConfig] = useState({
+        key: 'clientId',
+        direction: 'asc',
+    });
+    const [showExtendPopup, setShowExtendPopup] = useState(false);
+    const [showReturnPopup, setShowReturnPopup] = useState(false);  // For Return Confirmation Popup
+    const [selectedBorrowId, setSelectedBorrowId] = useState(null);
 
-  useEffect(() => {
-    BorrowService.getAll().then(response => {setBorrows(response.data); setFilteredBorrows(response.data)});
-    //ClientService.getAll().then(response => setClients(response.data));
-    //MediaService.getAll().then(response => setMedias(response.data));
-  }, []);
+    useEffect(() => {
+        if (auth.userRole === 0 || auth.userRole === 2) {
+            clientService.getAll().then((response) => setClients(response.data));
+            borrowService.getAll().then((response) => setBorrows(response.data));
+        }
+        if (auth.userRole === 1) {
+            console.log(auth.username);
+            borrowService.getAllForUser(auth.username).then((response) => {
+                console.log(response.data);
+                setBorrows(response.data);
+            });
+        }
+
+        mediaService.getAll().then((response) => setMedias(response.data));
+    }, []);
 
     useEffect(() => {
         const filtered = filterBorrowList(borrows, filters);
@@ -101,63 +116,210 @@ const BorrowLister = () => {
         setFilteredBorrows(sorted);
     }, [filters, sortConfig, borrows]);
 
+    const getClientName = (clientId) => clients.find((client) => client.clientId === clientId)?.name || '';
+    const getMediaName = (mediaId) => medias.find((media) => media.mediaId === mediaId)?.name || '';
 
-    const getClientName = (clientId) => clients.find(client => client.clientId === clientId)?.name || '';
-  const getMediaName = (mediaId) => medias.find(media => media.mediaId === mediaId)?.name || '';
-
-
-  const handleDelete = (borrowId) => {
-    BorrowService.delete(borrowId).then(() => {
-      setBorrows(borrows.filter(borrow => borrow.borrowId !== borrowId));
-    }).catch(error => console.error("Error deleting borrow:", error));
-  };
-
-    const handleEdit = (borrowId) => {
-        window.location.href = `/borrow/update/${borrowId}`;
+    const handleExtendPopup = (borrowId) => {
+        setSelectedBorrowId(borrowId);
+        setShowExtendPopup(true);
     };
 
+    const handleExtend = (days) => {
+        const borrow = borrows.find((b) => b.borrowId === selectedBorrowId);
+        if (!borrow) return;
+
+        const newReturnDate = new Date(borrow.returnDate);
+
+        if (days === 1) newReturnDate.setDate(newReturnDate.getDate() + 7);
+        if (days === 2) newReturnDate.setDate(newReturnDate.getDate() + 14);
+        if (days === 3) newReturnDate.setMonth(newReturnDate.getMonth() + 1);
+
+        const updatedBorrow = {
+            ...borrow,
+            returnDate: newReturnDate,
+            hasBeenExtended: true,
+        };
+
+        borrowService
+            .update(selectedBorrowId, updatedBorrow)
+            .then(() => {
+                setBorrows(borrows.map((b) => (b.borrowId === selectedBorrowId ? updatedBorrow : b)));
+                setShowExtendPopup(false); // Close the modal after success
+            })
+            .catch((error) => console.error('Error extending borrow:', error));
+    };
+
+    const handleDelete = (borrowId) => {
+        borrowService.delete(borrowId)
+            .then(() => {
+                setBorrows(borrows.filter((borrow) => borrow.borrowId !== borrowId));
+            })
+            .catch((error) => console.error('Error deleting borrow:', error));
+    };
+
+    const handleEdit = (borrowId) => {
+        navigate(`/borrow/update/${borrowId}`);
+    };
+
+    const handleReturnPopup = (borrowId) => {
+        setSelectedBorrowId(borrowId);
+        setShowReturnPopup(true);
+    };
+
+    const handleReturn = () => {
+        const borrow = borrows.find((b) => b.borrowId === selectedBorrowId);
+        if (!borrow) return;
+
+        const media = medias.find((m) => m.mediaId === borrow.mediaId);
+        if (media) {
+            media.stock += 1; // Increase the media stock by 1
+
+            mediaService
+                .update(media.mediaId, media)  // Update media stock
+                .then(() => {
+                    const updatedBorrow = { ...borrow, returned: true };
+                    borrowService
+                        .update(borrow.borrowId, updatedBorrow)
+                        .then(() => {
+                            setBorrows(borrows.filter((b) => b.borrowId !== borrow.borrowId));
+                            setShowReturnPopup(false);
+                        })
+                        .catch((error) => console.error('Error updating borrow:', error));
+                })
+                .catch((error) => console.error('Error updating media:', error));
+        }
+    };
+
+    const handleReturnCancel = () => {
+        setShowReturnPopup(false);
+    };
+    const handleExtendCancel = () => {
+        setShowExtendPopup(false);
+    }
+
     const handleFilterChange = (key, value) => {
-        setFilters(prevFilters => ({
+        setFilters((prevFilters) => ({
             ...prevFilters,
             [key]: value,
         }));
     };
 
     const handleSortChange = (key) => {
-        setSortConfig(prevConfig => {
-            return prevConfig.key === key
+        setSortConfig((prevConfig) =>
+            prevConfig.key === key
                 ? { key, direction: prevConfig.direction === 'asc' ? 'desc' : 'asc' }
-                : { key, direction: 'asc' };
-        });
+                : { key, direction: 'asc' }
+        );
     };
 
-  return (
-      <div className="list-page">
-          <ListHeader
-              headers={[
-                  {key: 'borrowDate', label: 'Borrow Date'},
-                  {key: 'returnDate', label: 'Return Date'},
-                  {key: 'clientId', label: 'Client Name'},
-                  {key: 'mediaId', label: 'Media Name'},
-                  {key: 'returned', label: 'Returned'}
-              ]}
-              onFilter={handleFilterChange}
-              onSort={handleSortChange}
-              filters={filters}
-              sortConfig={sortConfig}
-          />
-          <div className="table">
-              {filteredBorrows.map(borrow => (
-                  <TableRow
-                      key={borrow.borrowId}
-                      borrow={borrow}
-                      onEdit={handleEdit}
-                      onDelete={handleDelete}
-                  />
-              ))}
-          </div>
-      </div>
-  );
+    const dateFormatter = (date) => {
+        const dateObj = new Date(date);
+        return dateObj.toLocaleDateString( 'hu-HU', {
+            year: 'numeric',
+            month: 'numeric',
+            day: 'numeric',
+            hour: 'numeric',
+            minute: 'numeric'
+        });
+    }
+
+    return (
+        <div className="list-page">
+            {(auth.userRole === 0 || auth.userRole === 2) && (
+                <ListHeader
+                    headers={[
+                        { key: 'clientId', label: 'Client Name' },
+                        { key: 'mediaId', label: 'Media Name' },
+                        { key: 'borrowDate', label: 'Borrow Date' },
+                        { key: 'returnDate', label: 'Return Date' },
+                        { key: 'price', label: 'Price' },
+                    ]}
+                    onFilter={handleFilterChange}
+                    onSort={handleSortChange}
+                    filters={filters}
+                    sortConfig={sortConfig}
+                    model="borrow"
+                />
+            )}
+            {auth.userRole === 1 && (
+                <ListHeader
+                    headers={[
+                        { key: 'mediaId', label: 'Media Name' },
+                        { key: 'borrowDate', label: 'Borrow Date' },
+                        { key: 'returnDate', label: 'Return Date' },
+                        { key: 'price', label: 'Price' },
+                    ]}
+                    onFilter={handleFilterChange}
+                    onSort={handleSortChange}
+                    filters={filters}
+                    sortConfig={sortConfig}
+                />
+            )}
+            {filteredBorrows.map((borrow) => (
+                <div className="table-row" key={borrow.borrowId}>
+                    {(auth.userRole === 0 || auth.userRole === 2 )&& (
+                        <div className="form-field">{getClientName(borrow.clientId)}</div>)}
+                    <div className="form-field">{getMediaName(borrow.mediaId)}</div>
+                    <div className="form-field">{dateFormatter(borrow.borrowDate)}</div>
+                    <div className="form-field">{dateFormatter(borrow.returnDate)}</div>
+                    <div className="form-field">{borrow.price}</div>
+                    <div className="form-buttons">
+                        {borrow.hasBeenExtended ? (
+                            <button className="extend-button" disabled>
+                                Extended
+                            </button>
+                        ) : (
+                            <button
+                                className="extend-button"
+                                onClick={() => handleExtendPopup(borrow.borrowId)}
+                            >
+                                Extend Borrow
+                            </button>
+                        )}
+                        {(auth.userRole === 0 || auth.userRole === 2)&& (
+                        <button
+                            className="return-button"
+                            onClick={() => handleReturnPopup(borrow.borrowId)}
+                        >
+                            Return
+                        </button>
+                        )}
+                        {(auth.userRole === 0 || auth.userRole === 2) && (
+                            <button
+                                className="delete-button"
+                                onClick={() => handleDelete(borrow.borrowId)}
+                            >
+                                Delete
+                            </button>
+                        )}
+                    </div>
+                </div>
+            ))}
+            {showExtendPopup && (
+                <Modal
+                    onAction={handleExtend}
+                    onClose={handleExtendCancel}
+                    type="extend"
+                    isOpen={showExtendPopup}
+                    actionText="Extend"
+                    title="Extend Borrow"
+                    message="Select the extension period for this borrow:"
+                />
+            )}
+            {(auth.userRole === 0 || auth.userRole === 2)&& (
+                <Modal
+                    onAction={handleReturn}
+                    onClose={handleReturnCancel}
+                    type="return"
+                    isOpen={showReturnPopup}
+                    actionText="Return"
+                    title="Return Confirmation"
+                    message="Are you sure you want to return this media?"
+
+                />
+            )}
+        </div>
+    );
 };
 
 export default BorrowLister;
