@@ -1,15 +1,13 @@
-/* Globális beállítások */
+/* Global settings for font, colors, and layout */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f9f9fb;
-  color: #2c3e50;
+  background-color: #f4f4f9;
+  color: #333333;
   margin: 0;
-  line-height: 1.6;
-  word-wrap: break-word; /* Szavak tördelése hosszú szöveg esetén */
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 80%;
   margin: 2rem auto;
   padding: 0 1rem;
 }
@@ -19,255 +17,731 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #34495e;
-  color: #ecf0f1;
-  padding: 1rem 2rem;
+  background-color: #007bff;
+  color: white;
+  padding: 1rem;
   font-size: 1.2rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  font-weight: bold;
+  border-bottom: 4px solid #0056b3;
 }
 
-.navbar h1 {
+.navbar-title {
   margin: 0;
   font-weight: bold;
-  font-size: 1.5rem;
 }
 
-.navbar ul {
+.navbar-actions {
   display: flex;
-  gap: 5.5rem;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+  gap: 1rem;
 }
 
-.navbar-links{
-  padding: 1rem 2rem;
+.navbar-links {
   display: flex;
-  gap: 5.5rem;
+  gap: 1.5rem;
   list-style-type: none;
-  font-weight: bold;
-  cursor: pointer;
 }
 
 .navbar ul li {
   font-weight: bold;
-  cursor: pointer;
-}
-
-.navbar ul li:hover {
-  text-decoration: underline;
 }
 
 /* Card */
 .card {
   background: white;
-  border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 16px 0;
-  padding: 1.5rem;
-  transition: transform 0.3s, box-shadow 0.3s;
-  word-wrap: break-word;
+  padding: 1rem;
+  transition: transform 0.2s;
 }
 
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
 }
 
 .card-header {
   display: flex;
   justify-content: space-between;
   font-weight: bold;
-  font-size: 1.2rem;
-  color: #34495e;
-  gap: 1rem;
 }
 
-/* Filter és keresés */
+/* Filter and Search */
 .filter-group,
 .filter-container {
   display: flex;
-  gap: 12px;
-  margin: 1rem 0;
-  flex-wrap: wrap; /* Tördelje a szűrőket, ha túl hosszúak */
+  gap: 8px;
+  margin-top: 1rem;
 }
 
 .filter-input,
 .sort-button,
-.filter-input:focus {
-  padding: 0.7rem;
-  border-radius: 8px;
-  border: 1px solid #dcdde1;
-  transition: border-color 0.3s, box-shadow 0.3s;
+.filter-input:focus,
+.comparison-button-default{
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #dddddd;
+  transition: border-color 0.65s;
+}
+.filter-number-input {
+  width: 50px;
 }
 
-.filter-input:focus {
-  border-color: #3498db;
-  box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+.filter-input:focus,
+.sort-button:hover {
+  border-color: #007bff;
 }
 
 .sort-button {
-  background-color: #ecf0f1;
-  border: 1px solid #bdc3c7;
-  color: #2c3e50;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  background-color: #f0f0f0;
+  border: 1px solid #dddddd;
+  color: #555;
+  padding: 0.5rem 0.8rem;
+  margin: 10px;
 }
 
-.sort-button:hover {
-  background-color: #3498db;
+.comparison-button-default {
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #dddddd;
+  color: #555;
+  padding: 0.5rem 0.8rem;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.sort-button:hover, .comparison-button-default:hover {
+  background-color: #007bff;
   color: white;
 }
 
-/* Gombok */
+/* Buttons */
 .modify-button,
 .delete-button {
-  padding: 0.7rem 1.2rem;
-  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
   border: none;
   cursor: pointer;
   font-weight: bold;
-  transition: background-color 0.3s, transform 0.3s;
+  transition: background 0.2s;
 }
 
 .modify-button {
-  background-color: #27ae60;
+  background-color: #007bff;
   color: white;
 }
 
 .modify-button:hover {
-  background-color: #2ecc71;
-  transform: scale(1.05);
+  background-color: #0056b3;
 }
 
 .delete-button {
-  background-color: #e74c3c;
+  background-color: #dc3545;
   color: white;
 }
 
 .delete-button:hover {
-  background-color: #c0392b;
-  transform: scale(1.05);
+  background-color: #c82333;
 }
 
-/* Űrlapok */
+/* Add Form */
 .add-form {
   max-width: 600px;
-  margin: 2rem auto;
+  margin: auto;
   padding: 2rem;
   background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .add-form .form-group {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .add-form input,
 .add-form select {
   width: 100%;
-  padding: 0.7rem;
-  border: 1px solid #dcdde1;
-  border-radius: 8px;
-  margin-top: 0.5rem;
-  transition: border-color 0.3s;
-}
-
-.add-form input:focus,
-.add-form select:focus {
-  border-color: #3498db;
-  box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+  padding: 0.5rem;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  margin-top: 0.2rem;
 }
 
 .add-form button {
   width: 100%;
-  background-color: #34495e;
+  background-color: #007bff;
   color: white;
   border: none;
-  padding: 0.9rem;
+  padding: 0.7rem;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
-  border-radius: 8px;
-  transition: background-color 0.3s, transform 0.3s;
 }
 
 .add-form button:hover {
-  background-color: #2c3e50;
-  transform: scale(1.02);
+  background-color: #0056b3;
 }
 
-/* Táblázatok */
+/* Header Row styling */
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Table styling with card-like rows */
 .table {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
-.table-header,
+.link {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 20px;
+  font-weight: bold;
+}
+
 .table-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Dynamically adjust columns */
+  gap: 1rem; /* Add space between columns */
+  align-items: center; /* Align items vertically */
+  background-color: white;
   padding: 1rem;
   border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.table-row .form-field,
+.table-row .form-buttons {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+.form-buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.header-item {
+
+}
+
+.table-row:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Header and content cells */
+.header-cell {
+  font-weight: bold;
+  color: #333333;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+}
+
+.form-field {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: #555555;
 }
 
 .table-header {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Match .table-row */
+  gap: 1rem;
+  padding: 1rem;
   background-color: #f0f0f0;
+  border-radius: 8px;
   font-weight: bold;
   text-align: center;
 }
 
+.table-header span,
+.table-header .ghost-header {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #333333;
+}
+
+.table-header .ghost-header {
+  visibility: hidden; /* Makes the "Edit/Delete" header invisible but reserves space */
+}
+
 .table-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Dynamically adjust columns */
+  gap: 1rem;
+  align-items: center;
   background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.table-row .form-field,
+.table-row .form-buttons {
+  text-align: center;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-.table-row:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+.form-buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
 }
 
-/* Modal */
+/* Modal Styles */
 .modal {
-  position: fixed;
+  position: fixed;  /* Fix the modal to the viewport */
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent dark background */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
+  justify-content: center;  /* Center horizontally */
+  align-items: center;  /* Center vertically */
+  z-index: 1000;  /* Ensure the modal is above other content */
 }
 
 .modal-content {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
   text-align: center;
-  width: 400px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Optional shadow for a 3D effect */
 }
 
 .modal-buttons button {
   margin: 10px;
-  padding: 0.7rem 1.5rem;
-  background-color: #3498db;
+  padding: 10px 20px;
+  background-color: #007bff;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
+  transition: background-color 0.3s;
 }
 
 .modal-buttons button:hover {
-  background-color: #2980b9;
-  transform: scale(1.05);
+  background-color: #0056b3;
+}
+
+
+
+/*
+
+.dropdown {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ccc;
+  max-height: 200px;
+  width: auto;
+  overflow-y: auto;
+  position: absolute;
+  background: white;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+*/
+
+
+form {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #333333;
+}
+
+
+input[type="text"],
+input[type="date"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333333;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="password"]:focus,
+select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+button {
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+button:hover {
+  background: #0056b3;
+}
+/*
+
+.dropdown-menu {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  z-index: 1000;
+  max-height: 150px;
+  overflow-y: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: auto;
+}
+
+.dropdown-item:hover {
+  background: #f1f1f1;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+*/
+
+.checkbox-container input[type="checkbox"] {
+  transform: scale(1.2);
+}
+
+.checkbox-container label{
+  font-size: 14px;
+  color: #555555;
+}
+
+
+
+/* Tools container setup */
+.tools-container {
+  position: absolute;
+  display: inline-block;
+}
+
+.tools-text {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tools-buttons {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.tools-container:hover .tools-buttons {
+  display: block;
+}
+
+.modify-button, .delete-button {
+  padding: 5px 10px;
+  margin: 5px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.modify-button:hover, .delete-button:hover {
+  background-color: #007bff;
+  color: white;
+}
+.borrow-button {
+  background-color: #007bff; /* Normal button color */
+  color: white;
+  cursor: pointer;
+}
+
+.borrow-button.disabled {
+  background-color: #ccc; /* Greyed out color */
+  color: #666; /* Grey text color */
+  cursor: not-allowed; /* Change cursor to indicate it's disabled */
+}
+
+.borrow-button:disabled {
+  background-color: #ccc; /* Fallback for browsers */
+  color: #666;
+}
+
+/* App.css or similar */
+.homepage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.homepage-left {
+  flex: 1;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.homepage-left h1 {
+  font-size: 3rem;
+  color: #333333;
+}
+
+.homepage-left p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+  color: #555555;
+}
+
+.navigate-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.navigate-button:hover {
+  background-color: #0056b3;
+}
+
+.homepage-right {
+  flex: 1;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-prompt-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff5722;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register-prompt-button:hover {
+  background-color: #e64a19;
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Admin Dashboard Styles */
+.admin-dashboard {
+  padding: 40px;
+  text-align: center;
+  background-color: #f4f6f9;
+  height: 100vh;
+}
+
+.dashboard-header {
+  margin-bottom: 40px;
+}
+
+.dashboard-header h1 {
+  font-size: 2.5rem;
+  color: #333333;
+}
+
+.dashboard-header p {
+  font-size: 1.2rem;
+  color: #666666;
+}
+
+.dashboard-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.dashboard-button {
+  padding: 15px 25px;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 200px;
+  text-align: center;
+}
+
+.dashboard-button:hover {
+  background-color: #0056b3;
+}
+
+.dashboard-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.8);
+}
+
+
+.duration-button {
+  padding: 10px 20px;
+  border: 2px solid #cccccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #333333;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.duration-button:hover {
+  background-color: #f0f0f0;
+}
+
+.duration-button.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #0056b3;
+}
+
+/* Shared styles for Not Found and Unauthorized pages */
+.not-found-page,
+.unauthorized-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4f6f9;
+  text-align: center;
+  padding: 20px;
+}
+
+.not-found-page h1,
+.unauthorized-page h1 {
+  font-size: 3rem;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.not-found-page p,
+.unauthorized-page p {
+  font-size: 1.2rem;
+  color: #666666;
+  margin-bottom: 30px;
+}
+
+.go-home-button {
+  padding: 15px 30px;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.go-home-button:hover {
+  background-color: #0056b3;
+}
+
+.go-home-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.8);
 }
