@@ -1,15 +1,15 @@
-// src/index.js
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./MetaPages/App";
+import 'react-bootstrap-typeahead/css/Typeahead.css';
+import reportWebVitals from "./MetaPages/reportWebVitals";
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
     <React.StrictMode>
-        <App />
-    </React.StrictMode>,
-    document.getElementById('root')
+            <App />
+    </React.StrictMode>
 );
 
 reportWebVitals();
