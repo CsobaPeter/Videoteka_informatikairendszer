@@ -82,6 +82,7 @@ A rendszer egy vevői weboldalt is tartalmaz, amely a következő funkciókat bi
 ### 5.2. Adminisztrációs felület
 - **Média kezelése**: új médiák felvétele, meglévők szerkesztése, státusz frissítése.
 
+![Főoldal Képernyőterve] (https://github.com/CsobaPeter/Videoteka_informatikairendszer/blob/main/Kepernyoterv.PNG)
 
 ## 6. Üzleti szabályok
 - A kölcsönzési díjak meghatározása fix alapú, de tartalmazhat időtartam alapján változó díjakat is.
