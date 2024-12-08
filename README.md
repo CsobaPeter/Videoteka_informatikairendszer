@@ -31,10 +31,8 @@ A konfigurációhoz:
 - `index.html`: A kezdőoldal.
 - `App.css`: A webes felület stíluslapja.
 - `index.js`: Frontend logika.
-- `api.php`: Backend API végpontok.
-- `database.sql`: Az adatbázis sémája.
-- `config.php`: Konfigurációs fájl.
-
+- `Vdeoteka.sql`: Az adatbázis sémája.
+  
 ## Szerzői Jog és Licencinformáció
 
 Ez a projekt a [MIT licenc](https://opensource.org/licenses/MIT) alatt érhető el.
