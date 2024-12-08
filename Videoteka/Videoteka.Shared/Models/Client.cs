@@ -25,6 +25,12 @@ namespace Videoteka.Shared.Models
         public string Email { get; set; }
 
         [Required]
-        public int PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
+
+        [Required]
+        public bool IsSubscribed { get; set; }
+
+        [ForeignKey("UserId")]
+        public Guid UserId { get; set; }
     }
 }

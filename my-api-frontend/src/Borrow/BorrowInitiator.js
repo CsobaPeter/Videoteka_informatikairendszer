@@ -17,7 +17,7 @@ const BorrowInitiator = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const navigate = useNavigate();
 
-    const today = new Date().toISOString().split("T")[0];
+    const today = new Date().toISOString().slice(0, 16)
 
     const [borrow, setBorrow] = useState({
         clientId: "",
@@ -148,6 +148,8 @@ const BorrowInitiator = () => {
             returned: false,
             price: 0,
         });
+        setSelectedClient([]);
+        setSelectedMedia([]);
         setSelectedDuration("");
     };
 
@@ -158,7 +160,7 @@ const BorrowInitiator = () => {
 
     return (
         <div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="add-form">
                 {errorMessage && <p style={{ color: "red" }}>{errorMessage}</p>}
 
                 <ClientSelect

@@ -39,6 +39,21 @@ namespace Videoteka.Repositories
             return borrow;
         }
 
+        public async Task<Borrow> GetClosestByMediaId(Guid mediaId)
+        {
+            return await _context.Borrows
+                .Where(b => b.MediaId == mediaId && b.Returned == false)
+                .OrderBy(b => b.ReturnDate)
+                .FirstOrDefaultAsync();
+        }
+
+        public async Task<List<Borrow>> GetBorrowsByClientId(Guid clientId)
+        {
+            return await _context.Borrows
+                .Where(b => b.ClientId == clientId)
+                .ToListAsync();
+        }
+
         public async Task<List<Borrow>> GetAll()
         {
             return await _context.Borrows.ToListAsync();
@@ -52,6 +67,7 @@ namespace Videoteka.Repositories
             borrow.BorrowDate = newBorrow.BorrowDate;
             borrow.ReturnDate = newBorrow.ReturnDate;
             borrow.Returned = newBorrow.Returned;
+            borrow.HasBeenExtended = newBorrow.HasBeenExtended;
 
             await _context.SaveChangesAsync();
         }

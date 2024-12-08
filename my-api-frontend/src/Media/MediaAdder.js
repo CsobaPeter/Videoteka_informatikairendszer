@@ -62,7 +62,6 @@ const MediaAdder = () => {
             alert(errors.join("\n"));
             return;
         }
-        console.log(parsedMedia);
 
         mediaService.create(parsedMedia);
         setIsModalOpen(true);

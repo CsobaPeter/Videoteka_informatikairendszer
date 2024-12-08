@@ -14,6 +14,8 @@ namespace Videoteka.Repositories
 
         Task<List<User>> GetAll();
 
+        Task<User> GetByName(string username);
+
         Task Update(User user);
     }
 }

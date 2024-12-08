@@ -41,8 +41,8 @@ const filterBorrowList = (borrows, filters) => {
         });
     }
 
-    if (filters.returned) {
-        filtered = filtered.filter(borrow => borrow.returned === true);
+    if (filters.returned !== undefined) {
+        filtered = filtered.filter(borrow => borrow.returned === false);
     }
 
     if (filters.price) {
@@ -100,9 +100,7 @@ const BorrowLister = () => {
             borrowService.getAll().then((response) => setBorrows(response.data));
         }
         if (auth.userRole === 1) {
-            console.log(auth.username);
             borrowService.getAllForUser(auth.username).then((response) => {
-                console.log(response.data);
                 setBorrows(response.data);
             });
         }
@@ -124,7 +122,11 @@ const BorrowLister = () => {
         setShowExtendPopup(true);
     };
 
-    const handleExtend = (days) => {
+    const currentBorrow = borrows.find((b) => b.borrowId === selectedBorrowId);
+    const currentPrice = currentBorrow ? currentBorrow.price : 0;
+
+
+    const handleExtend = (days, newPrice) => {
         const borrow = borrows.find((b) => b.borrowId === selectedBorrowId);
         if (!borrow) return;
 
@@ -137,6 +139,7 @@ const BorrowLister = () => {
         const updatedBorrow = {
             ...borrow,
             returnDate: newReturnDate,
+            price: newPrice,
             hasBeenExtended: true,
         };
 
@@ -147,6 +150,15 @@ const BorrowLister = () => {
                 setShowExtendPopup(false); // Close the modal after success
             })
             .catch((error) => console.error('Error extending borrow:', error));
+    };
+
+    const calculateFuturePrice = (currentPrice, days) => {
+        const priceMultiplier = {
+            1: 1.3, // 10% increase for 1 week
+            2: 1.5, // 20% increase for 2 weeks
+            3: 2.0, // 50% increase for 1 month
+        };
+        return (currentPrice * priceMultiplier[days]).toFixed(2);
     };
 
     const handleDelete = (borrowId) => {
@@ -168,12 +180,12 @@ const BorrowLister = () => {
 
     const handleReturn = () => {
         const borrow = borrows.find((b) => b.borrowId === selectedBorrowId);
+
         if (!borrow) return;
 
         const media = medias.find((m) => m.mediaId === borrow.mediaId);
         if (media) {
             media.stock += 1; // Increase the media stock by 1
-
             mediaService
                 .update(media.mediaId, media)  // Update media stock
                 .then(() => {
@@ -222,6 +234,7 @@ const BorrowLister = () => {
             minute: 'numeric'
         });
     }
+
 
     return (
         <div className="list-page">
@@ -295,7 +308,7 @@ const BorrowLister = () => {
                     </div>
                 </div>
             ))}
-            {showExtendPopup && (
+            {showExtendPopup && currentBorrow && (
                 <Modal
                     onAction={handleExtend}
                     onClose={handleExtendCancel}
@@ -304,8 +317,14 @@ const BorrowLister = () => {
                     actionText="Extend"
                     title="Extend Borrow"
                     message="Select the extension period for this borrow:"
+                    futurePrices={{
+                        oneWeek: calculateFuturePrice(currentPrice, 1),
+                        twoWeeks: calculateFuturePrice(currentPrice, 2),
+                        oneMonth: calculateFuturePrice(currentPrice, 3),
+                    }}
                 />
             )}
+
             {(auth.userRole === 0 || auth.userRole === 2)&& (
                 <Modal
                     onAction={handleReturn}

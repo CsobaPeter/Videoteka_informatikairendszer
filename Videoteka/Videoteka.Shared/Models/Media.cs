@@ -43,6 +43,7 @@ namespace Videoteka.Shared.Models
         public MediaType Type { get; set; }
 
         [Required]
+        [Range(1, 1440)]
         public int Duration { get; set; }
 
         [Required]

@@ -38,9 +38,7 @@ const ListHeader = ({
     };
 
     const handleTypeSelect = (type) => {
-        console.log(type);
         if (!selectedTypes.includes(type)) {
-            console.log('adding type');
             const updatedTypes = [...selectedTypes, type];
             setSelectedTypes(updatedTypes);
             onFilter('type', updatedTypes);

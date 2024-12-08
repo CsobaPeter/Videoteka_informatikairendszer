@@ -33,6 +33,9 @@ namespace Videoteka.Migrations
                     b.Property<Guid>("ClientId")
                         .HasColumnType("TEXT");
 
+                    b.Property<bool>("HasBeenExtended")
+                        .HasColumnType("INTEGER");
+
                     b.Property<Guid>("MediaId")
                         .HasColumnType("TEXT");
 
@@ -62,13 +65,19 @@ namespace Videoteka.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("TEXT");
 
+                    b.Property<bool>("IsSubscribed")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(15)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("PhoneNumber")
-                        .IsRequired()    
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<Guid>("UserId")
                         .HasColumnType("TEXT");
 
                     b.HasKey("ClientId");
@@ -119,10 +128,9 @@ namespace Videoteka.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Password")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("RoleOfUser")
+                    b.Property<int?>("RoleOfUser")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Username")

@@ -38,24 +38,20 @@ const BorrowUpdate = () => {
 
     // Fetch clients, medias, and borrow data on component mount
     useEffect(() => {
-        console.log("Fetching clients and medias...");
 
         // Fetch clients and medias only once
         clientService.getAll().then((response) => {
             setClients(response.data);
-            console.log("Clients fetched:", response.data); // Debugging line
         });
 
         mediaService.getAll().then((response) => {
             setMedias(response.data);
-            console.log("Medias fetched:", response.data); // Debugging line
         });
 
         // Fetch the borrow data after clients and medias are set
         borrowService.getById(id)
             .then((response) => {
                 setBorrow(response.data);
-                console.log("Borrow data fetched:", response.data); // Debugging line
             })
             .catch((error) => console.error("Failed to fetch borrow data:", error));
     }, [id]); // Now, only run when `id` changes
@@ -66,9 +62,6 @@ const BorrowUpdate = () => {
             const client = clients.find((client) => client.clientId === borrow.clientId);
             const media = medias.find((media) => media.mediaId === borrow.mediaId);
 
-            // Debugging line to check if the client and media are found
-            console.log("Client found:", client);
-            console.log("Media found:", media);
 
             if (client && media) {
                 setInitialClient(client);

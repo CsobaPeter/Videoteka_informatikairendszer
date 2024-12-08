@@ -91,38 +91,38 @@ const TableRow = ({ media, onEdit, onDelete, onBorrow, showBorrowButton, isAdmin
         <div className="form-field">{media.duration}</div>
         <div className="form-field">{media.stock}</div>
         {isUser && (
-        <div className="form-buttons">
-            {isAdmin && (
-                <>
-                    <button className="modify-button" onClick={() => onEdit(media.mediaId)}>
-                        Edit
-                    </button>
-                    <button className="delete-button" onClick={() => onDelete(media.mediaId)}>
-                        Delete
-                    </button>
-                </>
-            )}
-            {showBorrowButton && (
-                <button
-                    className={`borrow-button ${media.stock === 0 ? 'disabled' : ''}`}
-                    onClick={() => onBorrow(media.mediaId)}
-                    disabled={media.stock === 0}
-                >
-                    Borrow Now
-                </button>
-            )}
-            {media.stock === -1 && (
-                <div>
-                    <h5>Next time in stock: {retrieveNextTimeInStock}</h5>
+            <div className="form-buttons">
+                {isAdmin && (
+                    <>
+                        <button className="modify-button" onClick={() => onEdit(media.mediaId)}>
+                            Edit
+                        </button>
+                        <button className="delete-button" onClick={() => onDelete(media.mediaId)}>
+                            Delete
+                        </button>
+                    </>
+                )}
+                {showBorrowButton && (
                     <button
-                        className={"book-borrow-button"}
-                        onClick={handleBookBorrow}
+                        className={`borrow-button ${media.stock === 0 ? 'disabled' : ''}`}
+                        onClick={() => onBorrow(media.mediaId)}
+                        disabled={media.stock === 0}
                     >
-                        Book as soon as possible
+                        Borrow Now
                     </button>
-                </div>
-            )}
-        </div>
+                )}
+                {media.stock === -1 && (
+                    <div>
+                        <h5>Next time in stock: {retrieveNextTimeInStock}</h5>
+                        <button
+                            className={"book-borrow-button"}
+                            onClick={handleBookBorrow}
+                        >
+                            Book as soon as possible
+                        </button>
+                    </div>
+                )}
+            </div>
         )}
     </div>
 );
@@ -145,7 +145,7 @@ const MediaLister = () => {
         ratingComparison: 'greater',
         durationComparison: 'greater',
     });
-    const today = new Date().toISOString().split("T")[0]; // Format today as YYYY-MM-DD
+    const today = new Date().toISOString().slice(0, 16);
     const navigate = useNavigate();
 
     const [sortConfig, setSortConfig] = useState({
@@ -188,39 +188,67 @@ const MediaLister = () => {
         navigate(`/media/update/${mediaId}`);
     };
 
+
     const handleBorrow = (mediaId) => {
         setCurrentMediaId(mediaId);
         setBorrowDetails({
-            borrowDate: today, // Set today's date
-            returnDate: '', // Clear the return date
+            borrowDate: today,
+            returnDate: '',
+            price: 0,
         });
         setIsBorrowModalOpen(true);
     };
 
-    const calculateReturnDate = (borrowDate, duration) => {
-        const date = new Date(borrowDate);
-        const returnDate = new Date(date.setDate(date.getDate() + duration));
+    const handleBorrowDetailsChange = (key, value) => {
+        const updatedDetails = { ...borrowDetails, [key]: value };
+        if (key === 'borrowDate' || key === 'returnDate') {
+            const newReturnDate = calculateReturnDate(updatedDetails.borrowDate, updatedDetails.returnDate);
+            const price = calculatePrice(currentMediaId, updatedDetails.borrowDate, newReturnDate);
+            updatedDetails.price = price;
+        }
+        setBorrowDetails(updatedDetails);
+    };
 
-        if (duration === 1) date.setDate(returnDate.getDate() + 7);
-        if (duration === 2) date.setDate(returnDate.getDate() + 14);
-        if (duration === 3) date.setMonth(returnDate.getMonth() + 1);
+    const calculateReturnDate = (duration) => {
+        const returnDate = new Date(borrowDetails.borrowDate);
+        if (duration === 1) returnDate.setDate(returnDate.getDate() + 7);
+        if (duration === 2) returnDate.setDate(returnDate.getDate() + 14);
+        if (duration === 3) returnDate.setMonth(returnDate.getMonth() + 1);
+        return returnDate.toISOString().split('T')[0];
+    };
 
-        return returnDate.toISOString().split("T")[0];
-    }
+    const calculatePrice = (mediaId, borrowDate, returnDate) => {
+        if (!mediaId || !borrowDate || !returnDate) return 0;
+
+        const media = medias.find((m) => m.mediaId === mediaId);
+        if (!media) return 0;
+
+        const days = (new Date(returnDate) - new Date(borrowDate)) / (1000 * 60 * 60 * 24);
+
+        const mediaTypeFactor = {
+            0: 1.4,
+            1: 1.5,
+            2: 2,
+            3: 1.3,
+            4: 2.5,
+            5: 1.1,
+            6: 1.05,
+            7: 1,
+        }[media.type] || 0;
+
+        return Math.round(days * mediaTypeFactor * 100) / 100;
+    };
 
     const handleBorrowSubmit = async () => {
         try {
-
-            const { borrowDate, returnDate } = borrowDetails;
             const borrowData = {
                 clientId: (await clientService.getidByUserName(auth.username)).data,
                 mediaId: currentMediaId,
-                borrowDate,
-                returnDate : calculateReturnDate(borrowDate, returnDate),
+                borrowDate: borrowDetails.borrowDate,
+                returnDate : borrowDetails.returnDate,
                 returned: false,
-                //hasBeenExtended: false,
+                price: borrowDetails.price,
             };
-            console.log('Borrow data:', borrowData);
 
             // Make the borrow request
             borrowService.create(borrowData)
@@ -242,7 +270,7 @@ const MediaLister = () => {
 
             // Reset the modal state and form
             setIsBorrowModalOpen(false);
-            setBorrowDetails({ borrowDate: '', returnDate: '' });
+            setBorrowDetails({ borrowDate: '', returnDate: '', price: 0 });
             alert('Borrow request created successfully!');
         } catch (error) {
             console.error('Error creating borrow:', error);
@@ -272,6 +300,16 @@ const MediaLister = () => {
                 : {key, direction: 'asc'};
         });
     };
+
+    const handleReturnButtonsPressed = (duration) => {
+        const newReturnDate = calculateReturnDate(duration);
+        const newPrice = calculatePrice(currentMediaId, borrowDetails.borrowDate, newReturnDate);
+        setBorrowDetails({
+            ...borrowDetails,
+            returnDate: newReturnDate,
+            price: newPrice,
+        });
+    }
 
     return (
         <div className="list-page">
@@ -322,13 +360,10 @@ const MediaLister = () => {
                         <label>
                             Borrow Date:
                             <input
-                                type="date"
+                                type="datetime-local"
                                 value={borrowDetails.borrowDate}
                                 onChange={(e) =>
-                                    setBorrowDetails((prev) => ({
-                                        ...prev,
-                                        borrowDate: e.target.value,
-                                    }))
+                                    handleBorrowDetailsChange('borrowDate', e.target.value)
                                 }
                             />
                         </label>
@@ -338,41 +373,29 @@ const MediaLister = () => {
                                 <button
                                     type="button"
                                     className={`duration-button ${borrowDetails.returnDate === "1" ? "active" : ""}`}
-                                    onClick={() =>
-                                        setBorrowDetails((prev) => ({
-                                            ...prev,
-                                            returnDate: "1", // Set 1 Week
-                                        }))
-                                    }
+                                    onClick={() => handleReturnButtonsPressed(1)}
                                 >
                                     1 Week
                                 </button>
                                 <button
                                     type="button"
                                     className={`duration-button ${borrowDetails.returnDate === "2" ? "active" : ""}`}
-                                    onClick={() =>
-                                        setBorrowDetails((prev) => ({
-                                            ...prev,
-                                            returnDate: "2", // Set 2 Weeks
-                                        }))
-                                    }
+                                    onClick={() =>  handleReturnButtonsPressed(2)}
                                 >
                                     2 Weeks
                                 </button>
                                 <button
                                     type="button"
                                     className={`duration-button ${borrowDetails.returnDate === "3" ? "active" : ""}`}
-                                    onClick={() =>
-                                        setBorrowDetails((prev) => ({
-                                            ...prev,
-                                            returnDate: "3", // Set 1 Month
-                                        }))
-                                    }
+                                    onClick={() =>  handleReturnButtonsPressed(3)}
                                 >
                                     1 Month
                                 </button>
                             </div>
                         </label>
+                        <div>
+                            <strong>Price: ${borrowDetails.price.toFixed(2)}</strong>
+                        </div>
                     </div>
                 </Modal>
 

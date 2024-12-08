@@ -84,9 +84,10 @@ const RegisterUser = () => {
     return (
         <div>
             <div>
-                <h2>Register</h2>
+
                 {errorMessage && <p className="error">{errorMessage}</p>}
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} className="add-form">
+                    <h2>Register</h2>
                     <h3>User Information</h3>
                     <div className="form-group">
                         <label htmlFor="username">Username:</label>
@@ -112,18 +113,18 @@ const RegisterUser = () => {
                     </div>
 
                     {auth.userRole === 2 && (
-                    <div className="form-group">
-                        <label htmlFor="roleOfUser">Role:</label>
-                        <select
-                            id="roleOfUser"
-                            name="roleOfUser"
-                            value={userData.roleOfUser}
-                            onChange={handleUserChange}
-                        >
-                            <option value={1}>Registered User</option>
-                            <option value={0}>Admin</option>
-                        </select>
-                    </div>
+                        <div className="form-group">
+                            <label htmlFor="roleOfUser">Role:</label>
+                            <select
+                                id="roleOfUser"
+                                name="roleOfUser"
+                                value={userData.roleOfUser}
+                                onChange={handleUserChange}
+                            >
+                                <option value={1}>Registered User</option>
+                                <option value={0}>Admin</option>
+                            </select>
+                        </div>
                     )}
                     <h3>Client Information</h3>
                     <div className="form-group">

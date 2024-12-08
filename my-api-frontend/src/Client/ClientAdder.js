@@ -70,7 +70,6 @@ const ClientAdder = () => {
             alert(errors.join("\n"));
             return;
         }
-        console.log(client);
         clientService.create(client).then(() => {
             setIsModalOpen(true);
         });

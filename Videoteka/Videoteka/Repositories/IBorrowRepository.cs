@@ -10,7 +10,11 @@ namespace Videoteka.Repositories
 
         Task<Borrow> Get(Guid id);
 
+        Task<Borrow> GetClosestByMediaId(Guid mediaId);
+
         Task<List<Borrow>> GetAll();
+
+        Task<List<Borrow>> GetBorrowsByClientId(Guid clientId);
 
         Task Update(Borrow borrow);
 

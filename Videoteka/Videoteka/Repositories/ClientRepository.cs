@@ -39,6 +39,11 @@ namespace Videoteka.Repositories
             return client;
         }
 
+        public async Task<Client> GetByUserId(Guid userId)
+        {
+            return await _context.Clients.FirstOrDefaultAsync(c => c.UserId == userId);
+        }
+
         public async Task<List<Client>> GetAll()
         {
             return await _context.Clients.ToListAsync();

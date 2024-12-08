@@ -17,7 +17,6 @@ const Login = () => {
             // Trigger login in AuthContext
             await login(userresp.userid, userresp.username, userresp.userrole);
 
-            console.log(userresp.userrole);
             // Navigate after login (use a delay to ensure state updates)
 
             await navigate(userresp.userrole === 1 ? "/media/list" : "/admin/dashboard");

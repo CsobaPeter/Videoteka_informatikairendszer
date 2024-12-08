@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Videoteka.Controllers
 {
     [ApiController]
-    [Route("media/[controller]")]
+    [Route("media/")]
     public class MediasController : ControllerBase
     {
         private readonly IMediaRepository _mediaRepo;
@@ -15,7 +15,7 @@ namespace Videoteka.Controllers
             _mediaRepo = mediRepo;
         }
 
-        [HttpPost]
+        [HttpPost("add")]
         public async Task<IActionResult> Add([FromBody] Media media)
         {
             var existingMedia = await _mediaRepo.Get(media.MediaId);
@@ -31,7 +31,7 @@ namespace Videoteka.Controllers
             return Ok();
         }
 
-        [HttpDelete("{id:guid}")]
+        [HttpDelete("delete/{id:guid}")]
         public async Task<IActionResult> Delete(Guid id)
         {
             var media = await _mediaRepo.Get(id);
@@ -46,7 +46,7 @@ namespace Videoteka.Controllers
             return Ok();
         }
 
-        [HttpGet("{id:guid}")]
+        [HttpGet("get/{id:guid}")]
         public async Task<ActionResult<Media>> Get(Guid id)
         {
             var media = await _mediaRepo.Get(id);
@@ -59,13 +59,13 @@ namespace Videoteka.Controllers
             return Ok(media);
         }
 
-        [HttpGet]
+        [HttpGet("getall")]
         public async Task<ActionResult<List<Media>>> GetAll()
         {
             return Ok(await _mediaRepo.GetAll());
         }
 
-        [HttpPut("{id:guid}")]
+        [HttpPut("update/{id:guid}")]
         public async Task<IActionResult> Update(Guid id, [FromBody] Media newMedia)
         {
             if (id != newMedia.MediaId)

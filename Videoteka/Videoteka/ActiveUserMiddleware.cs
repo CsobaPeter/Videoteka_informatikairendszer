@@ -10,7 +10,16 @@ namespace Videoteka
     public class ActiveUserMiddleware
     {
         private readonly RequestDelegate _next;
-        private static readonly ConcurrentBag<string> ActiveUsers = new ConcurrentBag<string>();
+        private static readonly HashSet<string> ActiveUsers = new HashSet<string>();
+
+        private readonly List<string> _whitelistedPaths = new()
+        {
+            "/auth/login",
+            "/auth/register",
+            "/auth/logout",
+            "/media/getall",
+            "/client/add"
+        };
 
         public ActiveUserMiddleware(RequestDelegate next)
         {
@@ -19,28 +28,44 @@ namespace Videoteka
 
         public async Task InvokeAsync(HttpContext context)
         {
-            var userId = context.User.Identity?.Name; // Assumes user ID is stored in the Identity Name
-            if (!string.IsNullOrEmpty(userId) && ActiveUsers.Contains(userId)) 
+            foreach (var item in ActiveUsers)
             {
-                await _next(context); // User is active, proceed
+                Console.WriteLine(item);
+            }
+            var path = context.Request.Path.Value;
+
+            if (_whitelistedPaths.Any(path.StartsWith))
+            {
+                await _next(context);
+                return;
+            }
+
+            string username = context.Request.Headers["Identity"].FirstOrDefault();
+
+            if (!string.IsNullOrEmpty(username) && !username.Equals(default) && ActiveUsers.Contains(username)) 
+            {
+                await _next(context);
+                return;
             }
             else
             {
                 context.Response.StatusCode = StatusCodes.Status403Forbidden;
+                await context.Response.WriteAsync("User is not active");
+                return;
             }
         }
 
-        public static void AddActiveUser(string userId)
+        public static void AddActiveUser(string username)
         {
-            if (!ActiveUsers.Contains(userId))
+            if (!ActiveUsers.Contains(username))
             {
-                ActiveUsers.Add(userId);
+                ActiveUsers.Add(username);
             }
         }
 
-        public static void RemoveActiveUser(string userId)
+        public static void RemoveActiveUser(string username)
         {
-            ActiveUsers.TryTake(out userId);
+            ActiveUsers.Remove(username);
         }
     }
 }

@@ -5,17 +5,19 @@ using Microsoft.AspNetCore.Mvc;
 namespace Videoteka.Controllers
 {
     [ApiController]
-    [Route("client/[controller]")]
+    [Route("client/")]
     public class ClientsController : ControllerBase
     {
         private readonly IClientRepository _clientRepo;
+        private readonly ILoginRepository _loginRepo;
 
-        public ClientsController(IClientRepository clientRepo)
+        public ClientsController(IClientRepository clientRepo, ILoginRepository loginRepo)
         {
             _clientRepo = clientRepo;
+            _loginRepo = loginRepo;
         }
 
-        [HttpPost]
+        [HttpPost("add")]
         public async Task<IActionResult> Add([FromBody] Client client)
         {
             var existingClient = await _clientRepo.Get(client.ClientId);
@@ -30,7 +32,7 @@ namespace Videoteka.Controllers
             return Ok();
         }
 
-        [HttpDelete("{id:guid}")]
+        [HttpDelete("delete/{id:guid}")]
         public async Task<IActionResult> Delete(Guid id)
         {
             var client = await _clientRepo.Get(id);
@@ -45,7 +47,7 @@ namespace Videoteka.Controllers
             return Ok();
         }
 
-        [HttpGet("{id:guid}")]
+        [HttpGet("get/{id:guid}")]
         public async Task<ActionResult<Media>> Get(Guid id)
         {
             var client = await _clientRepo.Get(id);
@@ -58,13 +60,13 @@ namespace Videoteka.Controllers
             return Ok(client);
         }
 
-        [HttpGet]
+        [HttpGet("getall")]
         public async Task<ActionResult<List<Media>>> GetAll()
         {
             return Ok(await _clientRepo.GetAll());
         }
 
-        [HttpPut("{id:guid}")]
+        [HttpPut("update/{id:guid}")]
         public async Task<IActionResult> Update(Guid id, [FromBody] Client newClient)
         {
             if (id != newClient.ClientId)
@@ -75,6 +77,14 @@ namespace Videoteka.Controllers
             await _clientRepo.Update(newClient);
 
             return Ok();
+        }
+
+        [HttpGet("getbyusername/{username}")]
+        public async Task<ActionResult<Guid>> GetByUsername(string username)
+        {
+            var client = _clientRepo.GetByUserId(_loginRepo.GetByName(username).Result.UserId).Result.ClientId;
+
+            return Ok(client);
         }
     }
 }

@@ -1,8 +1,139 @@
 [
   {
+    "ContainingType": "Videoteka.Controllers.LoginController",
+    "Method": "Delete",
+    "RelativePath": "auth/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Videoteka.Controllers.LoginController",
+    "Method": "Get",
+    "RelativePath": "auth/get/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Videoteka.Shared.Models.User",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Videoteka.Controllers.LoginController",
+    "Method": "GetAll",
+    "RelativePath": "auth/getall",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Videoteka.Shared.Models.User, Videoteka.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Videoteka.Controllers.LoginController",
+    "Method": "Login",
+    "RelativePath": "auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "Videoteka.Shared.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Videoteka.Controllers.LoginController",
+    "Method": "Logout",
+    "RelativePath": "auth/logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "Videoteka.Shared.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Videoteka.Controllers.LoginController",
+    "Method": "Register",
+    "RelativePath": "auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "Videoteka.Shared.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Videoteka.Controllers.LoginController",
+    "Method": "Update",
+    "RelativePath": "auth/update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "newUser",
+        "Type": "Videoteka.Shared.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Videoteka.Controllers.BorrowsController",
     "Method": "Add",
-    "RelativePath": "borrow/Borrows",
+    "RelativePath": "borrow/add",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -17,8 +148,50 @@
   },
   {
     "ContainingType": "Videoteka.Controllers.BorrowsController",
+    "Method": "Delete",
+    "RelativePath": "borrow/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Videoteka.Controllers.BorrowsController",
+    "Method": "Get",
+    "RelativePath": "borrow/get/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Videoteka.Shared.Models.Borrow",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Videoteka.Controllers.BorrowsController",
     "Method": "GetAll",
-    "RelativePath": "borrow/Borrows",
+    "RelativePath": "borrow/getall",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -37,56 +210,14 @@
   },
   {
     "ContainingType": "Videoteka.Controllers.BorrowsController",
-    "Method": "GetMediasOfClient",
-    "RelativePath": "borrow/Borrows/client/{clientId}",
+    "Method": "GetClosest",
+    "RelativePath": "borrow/getclosest/{mediaId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "clientId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[Videoteka.Shared.Models.Media, Videoteka.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Videoteka.Controllers.BorrowsController",
-    "Method": "Delete",
-    "RelativePath": "borrow/Borrows/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Videoteka.Controllers.BorrowsController",
-    "Method": "Get",
-    "RelativePath": "borrow/Borrows/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
+        "Name": "mediaId",
         "Type": "System.Guid",
         "IsRequired": true
       }
@@ -105,8 +236,24 @@
   },
   {
     "ContainingType": "Videoteka.Controllers.BorrowsController",
+    "Method": "GetPrice",
+    "RelativePath": "borrow/price/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Videoteka.Controllers.BorrowsController",
     "Method": "Update",
-    "RelativePath": "borrow/Borrows/{id}",
+    "RelativePath": "borrow/update/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -125,9 +272,25 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Videoteka.Controllers.BorrowsController",
+    "Method": "GetBorrowsForUser",
+    "RelativePath": "borrow/user/getall/{username}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Videoteka.Controllers.ClientsController",
     "Method": "Add",
-    "RelativePath": "client/Clients",
+    "RelativePath": "client/add",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -142,28 +305,8 @@
   },
   {
     "ContainingType": "Videoteka.Controllers.ClientsController",
-    "Method": "GetAll",
-    "RelativePath": "client/Clients",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[Videoteka.Shared.Models.Media, Videoteka.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Videoteka.Controllers.ClientsController",
     "Method": "Delete",
-    "RelativePath": "client/Clients/{id}",
+    "RelativePath": "client/delete/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -179,7 +322,7 @@
   {
     "ContainingType": "Videoteka.Controllers.ClientsController",
     "Method": "Get",
-    "RelativePath": "client/Clients/{id}",
+    "RelativePath": "client/get/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -204,8 +347,54 @@
   },
   {
     "ContainingType": "Videoteka.Controllers.ClientsController",
+    "Method": "GetAll",
+    "RelativePath": "client/getall",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Videoteka.Shared.Models.Media, Videoteka.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Videoteka.Controllers.ClientsController",
+    "Method": "GetByUsername",
+    "RelativePath": "client/getbyusername/{username}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Guid",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Videoteka.Controllers.ClientsController",
     "Method": "Update",
-    "RelativePath": "client/Clients/{id}",
+    "RelativePath": "client/update/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -224,99 +413,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Videoteka.Controllers.LoginController",
-    "Method": "Login",
-    "RelativePath": "login",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "user",
-        "Type": "Videoteka.Shared.Models.User",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Videoteka.Controllers.LoginController",
-    "Method": "Update",
-    "RelativePath": "login/Login",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "newUser",
-        "Type": "Videoteka.Shared.Models.User",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Videoteka.Controllers.LoginController",
-    "Method": "Delete",
-    "RelativePath": "login/Login",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Videoteka.Controllers.LoginController",
-    "Method": "Get",
-    "RelativePath": "login/Login/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Videoteka.Shared.Models.User",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Videoteka.Controllers.LoginController",
-    "Method": "Logout",
-    "RelativePath": "logout",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "user",
-        "Type": "Videoteka.Shared.Models.User",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "Videoteka.Controllers.MediasController",
     "Method": "Add",
-    "RelativePath": "media/Medias",
+    "RelativePath": "media/add",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -331,8 +430,50 @@
   },
   {
     "ContainingType": "Videoteka.Controllers.MediasController",
+    "Method": "Delete",
+    "RelativePath": "media/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Videoteka.Controllers.MediasController",
+    "Method": "Get",
+    "RelativePath": "media/get/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Videoteka.Shared.Models.Media",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Videoteka.Controllers.MediasController",
     "Method": "GetAll",
-    "RelativePath": "media/Medias",
+    "RelativePath": "media/getall",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -351,50 +492,8 @@
   },
   {
     "ContainingType": "Videoteka.Controllers.MediasController",
-    "Method": "Delete",
-    "RelativePath": "media/Medias/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Videoteka.Controllers.MediasController",
-    "Method": "Get",
-    "RelativePath": "media/Medias/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Videoteka.Shared.Models.Media",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Videoteka.Controllers.MediasController",
     "Method": "Update",
-    "RelativePath": "media/Medias/{id}",
+    "RelativePath": "media/update/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -407,22 +506,6 @@
       {
         "Name": "newMedia",
         "Type": "Videoteka.Shared.Models.Media",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Videoteka.Controllers.LoginController",
-    "Method": "Register",
-    "RelativePath": "register",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "user",
-        "Type": "Videoteka.Shared.Models.User",
         "IsRequired": true
       }
     ],

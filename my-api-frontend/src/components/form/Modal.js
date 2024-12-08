@@ -1,6 +1,6 @@
 import React from "react";
 
-const Modal = ({ isOpen, title, message, onClose, onAction, actionText, children, type }) => {
+const Modal = ({ isOpen, title, message, onClose, onAction, actionText, children, type, futurePrices }) => {
     if (!isOpen) return null;
 
     return (
@@ -21,12 +21,18 @@ const Modal = ({ isOpen, title, message, onClose, onAction, actionText, children
                         </div>
                     ) : (type === "extend" ? (
                         <div>
-                            <button onClick={() => onAction(1)}>1 Week</button>
-                            <button onClick={() => onAction(2)}>2 Weeks</button>
-                            <button onClick={() => onAction(3)}>1 Month</button>
+                            <button onClick={() => onAction(1, futurePrices.oneWeek)}>
+                                1 Week - New Price: ${futurePrices.oneWeek}
+                            </button>
+                            <button onClick={() => onAction(2, futurePrices.twoWeeks)}>
+                                2 Weeks - New Price: ${futurePrices.twoWeeks}
+                            </button>
+                            <button onClick={() => onAction(3, futurePrices.oneMonth)}>
+                                1 Month - New Price: ${futurePrices.oneMonth}
+                            </button>
                             <button onClick={onClose}>Cancel</button>
                         </div>
-                    ) : ( type === "return" ? (
+                    ) : (type === "return" ? (
                         <div>
                             <button className="confirm-button" onClick={onAction}>Yes</button>
                             <button className="cancel-button" onClick={onClose}>No</button>

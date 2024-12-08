@@ -32,7 +32,7 @@ const routes = [
             { path: "media/add", element: <ProtectedRoute element={<MediaAdder />} allowedRoles={[0, 2]} /> },
             { path: "media/update/:id", element: <ProtectedRoute element={<MediaUpdate />} allowedRoles={[0, 2]} /> },
             { path: "client/list", element: <ProtectedRoute element={<ClientLister />} allowedRoles={[0, 2]} /> },
-            { path: "client/add", element: <ProtectedRoute element={<ClientAdder />} allowedRoles={[0, 2]} /> },
+            { path: "client/add", element: <ProtectedRoute element={<ClientAdder />} allowedRoles={[2]} /> },
             { path: "client/update/:id", element: <ProtectedRoute element={<ClientUpdate />} allowedRoles={[0, 2]} /> },
             { path: "borrow/list", element: <ProtectedRoute element={<BorrowLister />} allowedRoles={[0, 1, 2]} /> },
             { path: "borrow/add", element: <ProtectedRoute element={<BorrowInitiator />} allowedRoles={[0, 2]} /> },

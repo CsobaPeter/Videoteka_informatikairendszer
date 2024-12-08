@@ -10,6 +10,8 @@ namespace Videoteka.Repositories
 
         Task<Client> Get(Guid id);
 
+        Task<Client> GetByUserId(Guid userId);
+
         Task<List<Client>> GetAll();
 
         Task Update(Client client);

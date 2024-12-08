@@ -8,7 +8,6 @@ namespace Videoteka.Repositories
     {
         private readonly AppContext _context;
         private readonly ILogger<ILoginRepository> _logger;
-        public static readonly ConcurrentBag<User> LoggedInUsers = new ConcurrentBag<User>();
 
         public LoginRepository(ILogger<LoginRepository> logger, AppContext context)
         {
@@ -43,6 +42,12 @@ namespace Videoteka.Repositories
         public async Task<List<User>> GetAll()
         {
             return await _context.Users.ToListAsync();
+        }
+
+        public async Task<User> GetByName(string username)
+        {
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Username == username);
+            return user;
         }
 
         public async Task Update(User newUser)

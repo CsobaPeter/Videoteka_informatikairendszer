@@ -166,16 +166,7 @@ body {
   margin-top: 0.2rem;
 }
 
-.add-form button {
-  width: 100%;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 0.7rem;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-}
+
 
 .add-form button:hover {
   background-color: #0056b3;
@@ -214,6 +205,8 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
 }
+
+
 
 .table-row .form-field,
 .table-row .form-buttons {
@@ -348,33 +341,6 @@ button {
 
 
 
-/*
-
-.dropdown {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  border: 1px solid #ccc;
-  max-height: 200px;
-  width: auto;
-  overflow-y: auto;
-  position: absolute;
-  background: white;
-  z-index: 10;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.dropdown-item {
-  padding: 10px;
-  cursor: pointer;
-}
-
-.dropdown-item:hover {
-  background-color: #f0f0f0;
-}
-*/
-
-
 form {
   background: #ffffff;
   border-radius: 10px;
@@ -396,8 +362,33 @@ form {
 input[type="text"],
 input[type="date"],
 input[type="password"],
+input[type="number"],
 select {
   width: 100%;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333333;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.filter-input-sorter{
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333333;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.filter-number-input {
+  width: 20%;
   padding: 10px;
   margin: 5px;
   border: 1px solid #cccccc;
@@ -436,38 +427,6 @@ button {
 button:hover {
   background: #0056b3;
 }
-/*
-
-.dropdown-menu {
-  position: absolute;
-  background: #fff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-top: 5px;
-  z-index: 1000;
-  max-height: 150px;
-  overflow-y: auto;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.dropdown-item {
-  padding: 10px;
-  cursor: pointer;
-  transition: background 0.2s;
-  width: auto;
-}
-
-.dropdown-item:hover {
-  background: #f1f1f1;
-}
-
-.checkbox-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-*/
 
 .checkbox-container input[type="checkbox"] {
   transform: scale(1.2);
@@ -744,4 +703,44 @@ button:hover {
 .go-home-button:focus {
   outline: none;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.8);
+}
+
+
+
+.rbt-menu {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  z-index: 1000;
+  max-height: 150px;
+  overflow-y: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Ensure items stack vertically */
+}
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 100%; /* Make items fill the available width */
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0; /* Optional: Highlight on hover */
+}
+
+input[type="datetime-local"]
+{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333333;
+    outline: none;
+    transition: border 0.3s;
 }
