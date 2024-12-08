@@ -78,11 +78,12 @@ A rendszer egy vevői weboldalt is tartalmaz, amely a következő funkciókat bi
 ### 5.1. Online felület
 - **Főoldal**: médiák listázása keresési lehetőséggel.
 - **Média részletek oldala**: a média leírása, elérhetőségi információk, ár kalkulálási lehetőség.
+  ![Képernyőterv1](https://github.com/CsobaPeter/Videoteka_informatikairendszer/blob/main/Kepernyoterv.PNG)
   
 ### 5.2. Adminisztrációs felület
 - **Média kezelése**: új médiák felvétele, meglévők szerkesztése, státusz frissítése.
+![Képernyőterv2](https://github.com/CsobaPeter/Videoteka_informatikairendszer/blob/main/Kepernyoterv2.PNG)
 
-![Főoldal Képernyőterve](https://github.com/CsobaPeter/Videoteka_informatikairendszer/blob/main/Kepernyoterv.PNG)
 
 ## 6. Üzleti szabályok
 - A kölcsönzési díjak meghatározása fix alapú, de tartalmazhat időtartam alapján változó díjakat is.
