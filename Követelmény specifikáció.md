@@ -29,10 +29,15 @@ A web felület szabványos eszközökkel készüljön, html/css. A képek jpeg �
 6. Követelménylista
 - | ID | Név | V. | Kifejtés |
   | -- | --- | -- | -------- |
-  | K1 | Adatbázis kezelése | 1.0 | Az alkalmazotti jogosultságú felhasználó tud felvenni új médiát az adatbázisba, illetve az adatbázisban már szereplő médiákat tudja törölni és módosłtani. |
+  | K1 | Adatbázis kezelése | 1.0 | Az admin tud felvenni új médiát az adatbázisba, illetve az adatbázisban már szereplő médiákat tudja törölni és módosłtani. |
   | K2 | Média kölcsönzése  | 1.0 | A felhasználó ki tudja kölcsönözni az elérthető médiákat az általa megadott időre. Csak a regisztrált felhasználóknak elérhető. |
   | K3 | Médiák keresése | 1.0 | A felhesználó tud keresni az elérhető médiák között szürők segítségével. |
-  | K4 | Árkalkulátor | 1.0 | Mielőtt a felhasználó kikölcsönözne egy médiát, láthatja, hogy mennyibe fog kerülni a megadott kölcsönzési időtartam alapján. |
+  | K4 | Árkalkulátor | 1.0 | Mielőtt a felhasználó kikölcsönözne egy médiát, láthatja, hogy mennyibe fog kerülni a média típusa és a megadott kölcsönzési időtartam alapján. |
+  | K5 | Regisztráció | 1.0 | A felhasználó egy felhasználónév és jelszó megadásával regisztrálja magát. |
+  | K6 | Belépés | 1.0 | A felhasználó a regisztráció során megadott felhasználónév és jelszó megadásával belép a rendszerbe.
+  | K7 | Jogosultsági szintek | 1.0 | - Regisztrálatlan felhasználó: Tudja böngészni a médiákat, de nem tud kölcsönözni. - Regisztrált felhasználó: Tud kölcsönözni is. - Admin: Teljes hozzáférés a rendszerhez, adatbázis, felhasználók, kölcsönzések kezelése. - Super Admin: Adminok kinevezése. |
+  | K8 | Kölcsönzés meghosszabbítása | 1.0 | Szükség esetén a felhasználó meghosszabbíthatja a kölcsönzését 1 alkalommal. |
+  
 
   
   
