@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "N:\\szfm\\Videoteka_functionaltest\\TestProject1\\TestProject1\\TestProject1.csproj": {}
+    "C:\\Users\\Antosz\\Desktop\\lehuzott\\Videoteka_informatikairendszer\\Videoteka_functionaltest\\TestProject1\\TestProject1\\TestProject1.csproj": {}
   },
   "projects": {
-    "N:\\szfm\\Videoteka_functionaltest\\TestProject1\\TestProject1\\TestProject1.csproj": {
+    "C:\\Users\\Antosz\\Desktop\\lehuzott\\Videoteka_informatikairendszer\\Videoteka_functionaltest\\TestProject1\\TestProject1\\TestProject1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "N:\\szfm\\Videoteka_functionaltest\\TestProject1\\TestProject1\\TestProject1.csproj",
+        "projectUniqueName": "C:\\Users\\Antosz\\Desktop\\lehuzott\\Videoteka_informatikairendszer\\Videoteka_functionaltest\\TestProject1\\TestProject1\\TestProject1.csproj",
         "projectName": "TestProject1",
-        "projectPath": "N:\\szfm\\Videoteka_functionaltest\\TestProject1\\TestProject1\\TestProject1.csproj",
-        "packagesPath": "C:\\Users\\Yanem123\\.nuget\\packages\\",
-        "outputPath": "N:\\szfm\\Videoteka_functionaltest\\TestProject1\\TestProject1\\obj\\",
+        "projectPath": "C:\\Users\\Antosz\\Desktop\\lehuzott\\Videoteka_informatikairendszer\\Videoteka_functionaltest\\TestProject1\\TestProject1\\TestProject1.csproj",
+        "packagesPath": "C:\\Users\\Antosz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Antosz\\Desktop\\lehuzott\\Videoteka_informatikairendszer\\Videoteka_functionaltest\\TestProject1\\TestProject1\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Yanem123\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Antosz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +26,9 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://packagesource": {}
         },
         "frameworks": {
           "net8.0": {
@@ -90,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

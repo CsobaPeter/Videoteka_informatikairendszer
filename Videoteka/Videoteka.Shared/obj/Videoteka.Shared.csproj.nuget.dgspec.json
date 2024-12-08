@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Antosz\\Desktop\\Videoteka_informatikairendszer\\Videoteka\\Videoteka.Shared\\Videoteka.Shared.csproj": {}
+    "C:\\Users\\Antosz\\Desktop\\lehuzott\\Videoteka_informatikairendszer\\Videoteka\\Videoteka.Shared\\Videoteka.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Antosz\\Desktop\\Videoteka_informatikairendszer\\Videoteka\\Videoteka.Shared\\Videoteka.Shared.csproj": {
+    "C:\\Users\\Antosz\\Desktop\\lehuzott\\Videoteka_informatikairendszer\\Videoteka\\Videoteka.Shared\\Videoteka.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Antosz\\Desktop\\Videoteka_informatikairendszer\\Videoteka\\Videoteka.Shared\\Videoteka.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\Antosz\\Desktop\\lehuzott\\Videoteka_informatikairendszer\\Videoteka\\Videoteka.Shared\\Videoteka.Shared.csproj",
         "projectName": "Videoteka.Shared",
-        "projectPath": "C:\\Users\\Antosz\\Desktop\\Videoteka_informatikairendszer\\Videoteka\\Videoteka.Shared\\Videoteka.Shared.csproj",
+        "projectPath": "C:\\Users\\Antosz\\Desktop\\lehuzott\\Videoteka_informatikairendszer\\Videoteka\\Videoteka.Shared\\Videoteka.Shared.csproj",
         "packagesPath": "C:\\Users\\Antosz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Antosz\\Desktop\\Videoteka_informatikairendszer\\Videoteka\\Videoteka.Shared\\obj\\",
+        "outputPath": "C:\\Users\\Antosz\\Desktop\\lehuzott\\Videoteka_informatikairendszer\\Videoteka\\Videoteka.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

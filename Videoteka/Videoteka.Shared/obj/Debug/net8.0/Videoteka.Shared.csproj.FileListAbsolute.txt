@@ -22,3 +22,15 @@ C:\Users\Antosz\Desktop\Videoteka_informatikairendszer\Videoteka\Videoteka.Share
 C:\Users\Antosz\Desktop\Videoteka_informatikairendszer\Videoteka\Videoteka.Shared\obj\Debug\net8.0\refint\Videoteka.Shared.dll
 C:\Users\Antosz\Desktop\Videoteka_informatikairendszer\Videoteka\Videoteka.Shared\obj\Debug\net8.0\Videoteka.Shared.pdb
 C:\Users\Antosz\Desktop\Videoteka_informatikairendszer\Videoteka\Videoteka.Shared\obj\Debug\net8.0\ref\Videoteka.Shared.dll
+C:\Users\Antosz\Desktop\lehuzott\Videoteka_informatikairendszer\Videoteka\Videoteka.Shared\bin\Debug\net8.0\Videoteka.Shared.deps.json
+C:\Users\Antosz\Desktop\lehuzott\Videoteka_informatikairendszer\Videoteka\Videoteka.Shared\bin\Debug\net8.0\Videoteka.Shared.dll
+C:\Users\Antosz\Desktop\lehuzott\Videoteka_informatikairendszer\Videoteka\Videoteka.Shared\bin\Debug\net8.0\Videoteka.Shared.pdb
+C:\Users\Antosz\Desktop\lehuzott\Videoteka_informatikairendszer\Videoteka\Videoteka.Shared\obj\Debug\net8.0\Videoteka.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Antosz\Desktop\lehuzott\Videoteka_informatikairendszer\Videoteka\Videoteka.Shared\obj\Debug\net8.0\Videoteka.Shared.AssemblyInfoInputs.cache
+C:\Users\Antosz\Desktop\lehuzott\Videoteka_informatikairendszer\Videoteka\Videoteka.Shared\obj\Debug\net8.0\Videoteka.Shared.AssemblyInfo.cs
+C:\Users\Antosz\Desktop\lehuzott\Videoteka_informatikairendszer\Videoteka\Videoteka.Shared\obj\Debug\net8.0\Videoteka.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Antosz\Desktop\lehuzott\Videoteka_informatikairendszer\Videoteka\Videoteka.Shared\obj\Debug\net8.0\Videoteka.Shared.sourcelink.json
+C:\Users\Antosz\Desktop\lehuzott\Videoteka_informatikairendszer\Videoteka\Videoteka.Shared\obj\Debug\net8.0\Videoteka.Shared.dll
+C:\Users\Antosz\Desktop\lehuzott\Videoteka_informatikairendszer\Videoteka\Videoteka.Shared\obj\Debug\net8.0\refint\Videoteka.Shared.dll
+C:\Users\Antosz\Desktop\lehuzott\Videoteka_informatikairendszer\Videoteka\Videoteka.Shared\obj\Debug\net8.0\Videoteka.Shared.pdb
+C:\Users\Antosz\Desktop\lehuzott\Videoteka_informatikairendszer\Videoteka\Videoteka.Shared\obj\Debug\net8.0\ref\Videoteka.Shared.dll

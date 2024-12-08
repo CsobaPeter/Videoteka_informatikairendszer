@@ -16,8 +16,8 @@ namespace VideotekaFunctionalTest
         [Test]
         public void testLogin()
         {
-            String userName = "a";
-            String password = "a";
+            String userName = "admin";
+            String password = "admin";
 
             IWebDriver webDriver = new ChromeDriver();
             webDriver.Navigate().GoToUrl("http://localhost:3000");
@@ -34,8 +34,8 @@ namespace VideotekaFunctionalTest
         [Test]
         public void testAddClient()
         {
-            String userName = "a";
-            String password = "a";
+            String userName = "admin";
+            String password = "admin";
             String clientName = "client";
             String clientEmail = "client@test.com";
             String clientPhone = "123456789";
@@ -65,8 +65,8 @@ namespace VideotekaFunctionalTest
         [Test]
         public void testClientFilterByName()
         {
-            String userName = "a";
-            String password = "a";
+            String userName = "admin";
+            String password = "admin";
             String clientName = "client";
             String clientEmail = "client@test.com";
             String clientPhone = "123456789";
@@ -111,8 +111,8 @@ namespace VideotekaFunctionalTest
         [Test]
         public void testAddMedia()
         {
-            String userName = "a";
-            String password = "a";
+            String userName = "admin";
+            String password = "admin";
             String title = "The Godfather";
             String desc = "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.";
             String genre = "Crime, Drama";
@@ -145,8 +145,8 @@ namespace VideotekaFunctionalTest
         [Test]
         public void testFilterMediaByName()
         {
-            String userName = "a";
-            String password = "a";
+            String userName = "admin";
+            String password = "admin";
             String title = "The Godfather";
             String desc = "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.";
             String genre = "Crime, Drama";
