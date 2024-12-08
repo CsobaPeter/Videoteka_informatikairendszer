@@ -1,0 +1,26 @@
+Test login
+1. Log in to instance - Login successful
+
+Test Client Adding
+1. Log in to instance - Login successful
+2. Click on Add client navbar item - Add client page appears
+3. Fill infos and finish adding client - Clients page is displayed
+4. Check the client in list - Client is in the list
+
+Test clients filtering
+1. Log in to instance - Login successful
+2. Click on Add client navbar item - Add client page appears
+3. Add 2 clients at least with different names - Clients page appears
+4. Filter client 1 name - only that client shows up
+
+Test Media Adding
+1. Log in to instance - Login successful
+2. Click on Add media navbar item - Add media page appears
+3. Fill infos and finish adding media - Media page is displayed
+4. Check the media in list - media is in the list
+
+Test clients filtering
+1. Log in to instance - Login successful
+2. Click on Add media navbar item - Add media page appears
+3. Add 2 media at least with different names - Medias page appears
+4. Filter media 1 name - only that media shows up
