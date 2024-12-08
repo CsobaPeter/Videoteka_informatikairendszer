@@ -8,7 +8,7 @@ A rendszer telepítése előtt ellenőrizze a következő követelményeket:
 - Fejlesztői eszközök: Visual Studio, MySQL Workbench
 
 A konfigurációhoz:
-1. Állítsa be az adatbázis csatlakozási adatokat a `config.php` fájlban.
+1. Állítsa be az adatbázis csatlakozási adatokat a config.
 2. Adja meg a webszerver gyökérkönyvtárát a projekt számára.
 3. Ellenőrizze, hogy az adatbázis-szerver elérhetők és megfelelően működnek.
 
@@ -31,7 +31,7 @@ A konfigurációhoz:
 - `index.html`: A kezdőoldal.
 - `App.css`: A webes felület stíluslapja.
 - `index.js`: Frontend logika.
-- `Vdeoteka.sql`: Az adatbázis sémája.
+- `Vdeoteka.db`: Az adatbázis sémája.
   
 ## Szerzői Jog és Licencinformáció
 
@@ -51,7 +51,7 @@ Ez a projekt a [MIT licenc](https://opensource.org/licenses/MIT) alatt érhető 
 ## Hibaelhárítás
 
 - Ellenőrizze a webszerver és adatbázis-szerver működését.
-- Győződjön meg arról, hogy a `config.php` fájlban helyesek az adatbázis-hitelesítési adatok.
+- Győződjön meg arról, hogy a config fájlban helyesek az adatbázis-hitelesítési adatok.
 - Futtassa az `error.log` fájl elemzését a hibák diagnosztizálásához.
 
 ## Készítők Listája és Köszönetnyilvánítások
