@@ -82,9 +82,13 @@ A rendszer egy vevői weboldalt is tartalmaz, amely a következő funkciókat bi
 ### 5.2. Adminisztrációs felület
 - **Média kezelése**: új médiák felvétele, meglévők szerkesztése, státusz frissítése.
 
+
 ## 6. Üzleti szabályok
 - A kölcsönzési díjak meghatározása fix alapú, de tartalmazhat időtartam alapján változó díjakat is.
 - Egy média státuszát mindig frissíteni kell a kiadás és visszavétel során.
 
 ## 7. Következtetés
 A rendszer célja egy adatbázis-alapú nyilvántartás és egy vevői weboldal létrehozása, amely egyszerűbbé teszi a médiák kölcsönzését és nyomon követését.
+
+## Használati Esetek
+![use_case](https://github.com/user-attachments/assets/2f37e5dd-2357-4aaf-ab8f-cb85dfbfd5bb)
