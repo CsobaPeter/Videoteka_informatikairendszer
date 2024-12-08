@@ -24,10 +24,10 @@ namespace TestProject1
             return driver.FindElement(By.XPath("//a[@href='" + name + "']"));
         }
 
-        public AddClientPage clickOnAddClientNavbarItem()
+        public RegisterUserPage clickOnRegisterUser()
         {
-            getNavbarItem("/client/add").Click();
-            return new AddClientPage(driver);
+            getNavbarItem("/registerUser").Click();
+            return new RegisterUserPage(driver);
         }
 
         public AddMediaPage clickOnAddMediaNavbarItem()
@@ -48,12 +48,32 @@ namespace TestProject1
 
     }
 
-    class AddClientPage : BasePage
+    class RegisterUserPage : BasePage
     {
         IWebDriver driver;
-        public AddClientPage(IWebDriver webDriver) : base(webDriver)
+        public RegisterUserPage(IWebDriver webDriver) : base(webDriver)
         {
             driver = webDriver;
+        }
+
+        public IWebElement getUserNameInput()
+        {
+            return driver.FindElement(By.XPath("//input[@name='username']"));
+        }
+
+        public void setUserName(String name)
+        {
+            getUserNameInput().SendKeys(name);
+        }
+
+        public IWebElement getPasswordInput()
+        {
+            return driver.FindElement(By.XPath("//input[@name='password']"));
+        }
+
+        public void setPassword(String password)
+        {
+            getPasswordInput().SendKeys(password);
         }
 
         public IWebElement getNameInput()
@@ -92,29 +112,6 @@ namespace TestProject1
         public void setAddress(String address)
         {
             getAddressInput().SendKeys(address);
-        }
-
-        public IWebElement getSelectUserInput()
-        {
-            return driver.FindElement(By.XPath("//input[@placeholder='Search for a client...']"));
-        }
-
-        public void setSelectUser(String user)
-        {
-            Thread.Sleep(1000);
-            getSelectUserInput().SendKeys(Keys.LeftControl + "a" + Keys.Delete);
-            Thread.Sleep(1000);
-            getSelectUserInput().SendKeys(user);
-        }
-
-        public IWebElement getUserLink(String user)
-        {
-            return driver.FindElement(By.XPath("//a[@aria-label='" + user + "']"));
-        }
-
-        public void clickOnUserLink(String user)
-        {
-            getUserLink(user).Click();
         }
 
         public IWebElement getSubmitButton()

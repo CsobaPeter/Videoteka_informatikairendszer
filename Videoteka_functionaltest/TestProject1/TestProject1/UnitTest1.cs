@@ -26,6 +26,7 @@ namespace VideotekaFunctionalTest
             loginPage.setUsername(userName);
             loginPage.setPassword(password);
             BasePage basePage = loginPage.clickOnLogin();
+            Thread.Sleep(1000);
             Assert.IsTrue(basePage.getNavbarTitle().Displayed);
             Assert.IsTrue(basePage.getUserName() == userName);
             webDriver.Quit();
@@ -36,6 +37,8 @@ namespace VideotekaFunctionalTest
         {
             String userName = "admin";
             String password = "admin";
+            String clientUsername = "lmao";
+            String clientPassword = "pass";
             String clientName = "client";
             String clientEmail = "client@test.com";
             String clientPhone = "123456789";
@@ -48,17 +51,18 @@ namespace VideotekaFunctionalTest
             loginPage.setUsername(userName);
             loginPage.setPassword(password);
             BasePage basePage = loginPage.clickOnLogin();
+            Thread.Sleep(1000);
             Assert.IsTrue(basePage.getNavbarTitle().Displayed);
             Assert.IsTrue(basePage.getUserName() == userName);
-            AddClientPage addClientPage = basePage.clickOnAddClientNavbarItem();
-            addClientPage.setName(clientName);
-            addClientPage.setEmail(clientEmail);
-            addClientPage.setPhone(clientPhone);
-            addClientPage.setAddress(clientAddress);
-            addClientPage.setSelectUser(userName);
-            addClientPage.clickOnUserLink(userName);
-            addClientPage.clickOnSubmit();
-            Assert.IsTrue(addClientPage.getSuccessMessage().Displayed);
+            RegisterUserPage registerUserPage = basePage.clickOnRegisterUser();
+            registerUserPage.setUserName(clientUsername);
+            registerUserPage.setPassword(clientPassword);
+            registerUserPage.setName(clientName);
+            registerUserPage.setEmail(clientEmail);
+            registerUserPage.setPhone(clientPhone);
+            registerUserPage.setAddress(clientAddress);
+            registerUserPage.clickOnSubmit();
+            Assert.IsTrue(registerUserPage.getSuccessMessage().Displayed);
             webDriver.Quit();
         }
 
@@ -67,10 +71,15 @@ namespace VideotekaFunctionalTest
         {
             String userName = "admin";
             String password = "admin";
+
+            String clientUsername = "idk";
+            String clientPassword = "password";
             String clientName = "client";
             String clientEmail = "client@test.com";
             String clientPhone = "123456789";
             String clientAddress = "Somewhere 12";
+            String client2Username = "blabla";
+            String client2Password = "password";
             String client2Name = "client2";
             String client2Email = "client2@test.com";
             String client2Phone = "987654321";
@@ -83,26 +92,27 @@ namespace VideotekaFunctionalTest
             loginPage.setUsername(userName);
             loginPage.setPassword(password);
             BasePage basePage = loginPage.clickOnLogin();
+            Thread.Sleep(1000);
             Assert.IsTrue(basePage.getNavbarTitle().Displayed);
             Assert.IsTrue(basePage.getUserName() == userName);
-            AddClientPage addClientPage = basePage.clickOnAddClientNavbarItem();
-            addClientPage.setName(clientName);
-            addClientPage.setEmail(clientEmail);
-            addClientPage.setPhone(clientPhone);
-            addClientPage.setAddress(clientAddress);
-            addClientPage.setSelectUser(userName);
-            addClientPage.clickOnUserLink(userName);
-            addClientPage.clickOnSubmit();
-            addClientPage.clickOnModalAddMoreButton();
+            RegisterUserPage registerUserPage = basePage.clickOnRegisterUser();
+            registerUserPage.setUserName(clientUsername);
+            registerUserPage.setPassword(clientPassword);
+            registerUserPage.setName(clientName);
+            registerUserPage.setEmail(clientEmail);
+            registerUserPage.setPhone(clientPhone);
+            registerUserPage.setAddress(clientAddress);
+            registerUserPage.clickOnSubmit();
+            registerUserPage.clickOnModalAddMoreButton();
 
-            addClientPage.setName(client2Name);
-            addClientPage.setEmail(client2Email);
-            addClientPage.setPhone(client2Phone);
-            addClientPage.setAddress(client2Address);
-            addClientPage.setSelectUser(userName);
-            addClientPage.clickOnUserLink(userName);
-            addClientPage.clickOnSubmit();
-            ClientsPage clientsPage = addClientPage.clickOnModalCloseButton();
+            registerUserPage.setUserName(client2Username);
+            registerUserPage.setPassword(client2Password);
+            registerUserPage.setName(client2Name);
+            registerUserPage.setEmail(client2Email);
+            registerUserPage.setPhone(client2Phone);
+            registerUserPage.setAddress(client2Address);
+            registerUserPage.clickOnSubmit();
+            ClientsPage clientsPage = registerUserPage.clickOnModalCloseButton();
             clientsPage.setFilterNameInput(client2Name);
             Assert.IsTrue(clientsPage.getClientsList().Count() == 1);
             webDriver.Quit();
@@ -128,6 +138,7 @@ namespace VideotekaFunctionalTest
             loginPage.setUsername(userName);
             loginPage.setPassword(password);
             BasePage basePage = loginPage.clickOnLogin();
+            Thread.Sleep(1000);
             Assert.IsTrue(basePage.getNavbarTitle().Displayed);
             Assert.IsTrue(basePage.getUserName() == userName);
             AddMediaPage addMediaPage = basePage.clickOnAddMediaNavbarItem();
@@ -170,6 +181,7 @@ namespace VideotekaFunctionalTest
             loginPage.setUsername(userName);
             loginPage.setPassword(password);
             BasePage basePage = loginPage.clickOnLogin();
+            Thread.Sleep(1000);
             Assert.IsTrue(basePage.getNavbarTitle().Displayed);
             Assert.IsTrue(basePage.getUserName() == userName);
             AddMediaPage addMediaPage = basePage.clickOnAddMediaNavbarItem();

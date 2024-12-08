@@ -34,3 +34,15 @@ C:\Users\Antosz\Desktop\lehuzott\Videoteka_informatikairendszer\Videoteka\Videot
 C:\Users\Antosz\Desktop\lehuzott\Videoteka_informatikairendszer\Videoteka\Videoteka.Shared\obj\Debug\net8.0\refint\Videoteka.Shared.dll
 C:\Users\Antosz\Desktop\lehuzott\Videoteka_informatikairendszer\Videoteka\Videoteka.Shared\obj\Debug\net8.0\Videoteka.Shared.pdb
 C:\Users\Antosz\Desktop\lehuzott\Videoteka_informatikairendszer\Videoteka\Videoteka.Shared\obj\Debug\net8.0\ref\Videoteka.Shared.dll
+N:\szfm\Videoteka_informatikairendszer\Videoteka\Videoteka.Shared\bin\Debug\net8.0\Videoteka.Shared.deps.json
+N:\szfm\Videoteka_informatikairendszer\Videoteka\Videoteka.Shared\bin\Debug\net8.0\Videoteka.Shared.dll
+N:\szfm\Videoteka_informatikairendszer\Videoteka\Videoteka.Shared\bin\Debug\net8.0\Videoteka.Shared.pdb
+N:\szfm\Videoteka_informatikairendszer\Videoteka\Videoteka.Shared\obj\Debug\net8.0\Videoteka.Shared.GeneratedMSBuildEditorConfig.editorconfig
+N:\szfm\Videoteka_informatikairendszer\Videoteka\Videoteka.Shared\obj\Debug\net8.0\Videoteka.Shared.AssemblyInfoInputs.cache
+N:\szfm\Videoteka_informatikairendszer\Videoteka\Videoteka.Shared\obj\Debug\net8.0\Videoteka.Shared.AssemblyInfo.cs
+N:\szfm\Videoteka_informatikairendszer\Videoteka\Videoteka.Shared\obj\Debug\net8.0\Videoteka.Shared.csproj.CoreCompileInputs.cache
+N:\szfm\Videoteka_informatikairendszer\Videoteka\Videoteka.Shared\obj\Debug\net8.0\Videoteka.Shared.sourcelink.json
+N:\szfm\Videoteka_informatikairendszer\Videoteka\Videoteka.Shared\obj\Debug\net8.0\Videoteka.Shared.dll
+N:\szfm\Videoteka_informatikairendszer\Videoteka\Videoteka.Shared\obj\Debug\net8.0\refint\Videoteka.Shared.dll
+N:\szfm\Videoteka_informatikairendszer\Videoteka\Videoteka.Shared\obj\Debug\net8.0\Videoteka.Shared.pdb
+N:\szfm\Videoteka_informatikairendszer\Videoteka\Videoteka.Shared\obj\Debug\net8.0\ref\Videoteka.Shared.dll
