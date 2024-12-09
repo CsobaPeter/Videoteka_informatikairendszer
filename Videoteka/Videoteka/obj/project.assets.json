@@ -3645,23 +3645,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Antosz\\.nuget\\packages\\": {},
+    "C:\\Users\\Peti\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Antosz\\Desktop\\vege\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Videoteka.csproj",
+      "projectUniqueName": "C:\\Users\\Peti\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Videoteka.csproj",
       "projectName": "Videoteka",
-      "projectPath": "C:\\Users\\Antosz\\Desktop\\vege\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Videoteka.csproj",
-      "packagesPath": "C:\\Users\\Antosz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Antosz\\Desktop\\vege\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\obj\\",
+      "projectPath": "C:\\Users\\Peti\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\Videoteka.csproj",
+      "packagesPath": "C:\\Users\\Peti\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Peti\\Videoteka_informatikairendszer\\Videoteka\\Videoteka\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Antosz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Peti\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3670,16 +3670,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://packagesource": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Antosz\\Desktop\\vege\\Videoteka_informatikairendszer\\Videoteka\\Videoteka.Shared\\Videoteka.Shared.csproj": {
-              "projectPath": "C:\\Users\\Antosz\\Desktop\\vege\\Videoteka_informatikairendszer\\Videoteka\\Videoteka.Shared\\Videoteka.Shared.csproj"
+            "C:\\Users\\Peti\\Videoteka_informatikairendszer\\Videoteka\\Videoteka.Shared\\Videoteka.Shared.csproj": {
+              "projectPath": "C:\\Users\\Peti\\Videoteka_informatikairendszer\\Videoteka\\Videoteka.Shared\\Videoteka.Shared.csproj"
             }
           }
         }
@@ -3751,7 +3749,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
