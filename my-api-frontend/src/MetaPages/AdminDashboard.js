@@ -44,12 +44,6 @@ const AdminDashboard = () => {
                 </button>
                 <button
                     className="dashboard-button"
-                    onClick={() => navigateTo("/client/add")}
-                >
-                    Add New Client
-                </button>
-                <button
-                    className="dashboard-button"
                     onClick={() => navigateTo("/borrow/add")}
                 >
                     Initiate New Borrow

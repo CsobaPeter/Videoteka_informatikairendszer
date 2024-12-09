@@ -56,17 +56,16 @@ const Layout = () => {
                 <div className="navbar-links">
                     {(auth.userRole === 0 || auth.userRole === 2) ? (
                         <div>
-                            {(auth.userRole === 2) ? (
-                            <Link className="link" to="/client/add">Add Client</Link>
-                        ) : (
                             <>
-                            <Link className="link" to="/client/list">Clients</Link>
-                            <Link className="link" to="/media/add">Add Media</Link>
-                            <Link className="link" to="/media/list">Medias</Link>
-                            <Link className="link" to="/borrow/add">Initiate Borrow</Link>
-                            <Link className="link" to="/borrow/list">Borrows</Link>
-                            <Link className="link" to="/registerUser">Register a User</Link>
+                                <Link className="link" to="/client/list">Clients</Link>
+                                <Link className="link" to="/media/add">Add Media</Link>
+                                <Link className="link" to="/media/list">Medias</Link>
+                                <Link className="link" to="/borrow/add">Initiate Borrow</Link>
+                                <Link className="link" to="/borrow/list">Borrows</Link>
+                                <Link className="link" to="/registerUser">Register a User</Link>
                             </>
+                            {(auth.userRole === 2) && (
+                            <Link className="link" to="/client/add">Add Client</Link>
                         )}
                         </div>
                     ) : auth.userRole === 1 ? (

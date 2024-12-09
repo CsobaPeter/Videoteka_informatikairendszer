@@ -29,7 +29,7 @@ const Login = () => {
 
 
     return (
-        <div>
+        <div className={"login-form"}>
             <h2>Login</h2>
             <input
                 type="text"
@@ -43,7 +43,7 @@ const Login = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
             />
-            <button className="login" onClick={handleLogin}>Login</button>
+            <button className="login-btn" onClick={handleLogin}>Login</button>
         </div>
     );
 };

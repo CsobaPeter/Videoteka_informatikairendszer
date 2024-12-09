@@ -8847,3 +8847,388 @@ FROM "Medias" AS "m"
 2024-12-08 23:27:46.600 +01:00 [INF] Executed action Videoteka.Controllers.MediasController.GetAll (Videoteka) in 1.8095ms
 2024-12-08 23:27:46.601 +01:00 [INF] Executed endpoint 'Videoteka.Controllers.MediasController.GetAll (Videoteka)'
 2024-12-08 23:27:46.602 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/media/getall - 200 null application/json; charset=utf-8 7.3971ms
+2024-12-09 03:46:53.349 +01:00 [INF] Now listening on: http://localhost:8080
+2024-12-09 03:46:53.400 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-09 03:46:53.403 +01:00 [INF] Hosting environment: Development
+2024-12-09 03:46:53.404 +01:00 [INF] Content root path: C:\Users\Antosz\Desktop\vege\Videoteka_informatikairendszer\Videoteka\Videoteka
+2024-12-09 03:46:54.148 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/swagger/index.html - null null
+2024-12-09 03:46:54.433 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/swagger/index.html - 200 null text/html;charset=utf-8 287.7462ms
+2024-12-09 03:46:55.021 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/swagger/index.js - null null
+2024-12-09 03:46:55.021 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-09 03:46:55.030 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/swagger/index.js - 200 null application/javascript;charset=utf-8 8.7849ms
+2024-12-09 03:46:55.032 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 11.1027ms
+2024-12-09 03:46:55.103 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/_vs/browserLink - null null
+2024-12-09 03:46:55.164 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/_vs/browserLink - 200 null text/javascript; charset=UTF-8 61.1592ms
+2024-12-09 03:46:55.230 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/swagger/v1/swagger.json - null null
+2024-12-09 03:46:55.405 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 174.4445ms
+2024-12-09 03:48:36.137 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:8080/auth/login - null null
+2024-12-09 03:48:36.142 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:48:36.144 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:8080/auth/login - 204 null null 7.7413ms
+2024-12-09 03:48:36.149 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:8080/auth/login - application/json 33
+2024-12-09 03:48:36.153 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:48:36.157 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-12-09 03:48:36.160 +01:00 [INF] Executing endpoint 'Videoteka.Controllers.LoginController.Login (Videoteka)'
+2024-12-09 03:48:36.175 +01:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Videoteka.Shared.Models.User) on controller Videoteka.Controllers.LoginController (Videoteka).
+2024-12-09 03:48:37.075 +01:00 [INF] Executed DbCommand (10ms) [Parameters=[@__username_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."UserId", "u"."Password", "u"."RoleOfUser", "u"."Username"
+FROM "Users" AS "u"
+WHERE "u"."Username" = @__username_0
+LIMIT 1
+2024-12-09 03:48:37.134 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[Videoteka.Shared.Models.Role, Videoteka.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-12-09 03:48:37.146 +01:00 [INF] Executed action Videoteka.Controllers.LoginController.Login (Videoteka) in 963.4526ms
+2024-12-09 03:48:37.148 +01:00 [INF] Executed endpoint 'Videoteka.Controllers.LoginController.Login (Videoteka)'
+2024-12-09 03:48:37.164 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:8080/auth/login - 200 null application/json; charset=utf-8 1014.8796ms
+2024-12-09 03:50:23.089 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:8080/media/getall - null null
+2024-12-09 03:50:23.089 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:8080/media/getall - null null
+2024-12-09 03:50:23.093 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:23.097 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:23.097 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:8080/media/getall - 204 null null 8.1305ms
+2024-12-09 03:50:23.098 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:8080/media/getall - 204 null null 8.8016ms
+2024-12-09 03:50:23.105 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/media/getall - null null
+2024-12-09 03:50:23.108 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:23.109 +01:00 [INF] Executing endpoint 'Videoteka.Controllers.MediasController.GetAll (Videoteka)'
+2024-12-09 03:50:23.113 +01:00 [INF] Route matched with {action = "GetAll", controller = "Medias"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Videoteka.Shared.Models.Media]]] GetAll() on controller Videoteka.Controllers.MediasController (Videoteka).
+2024-12-09 03:50:23.135 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."MediaId", "m"."Description", "m"."Duration", "m"."Genre", "m"."Name", "m"."Rating", "m"."Stock", "m"."Type"
+FROM "Medias" AS "m"
+2024-12-09 03:50:23.151 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Videoteka.Shared.Models.Media, Videoteka.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-09 03:50:23.158 +01:00 [INF] Executed action Videoteka.Controllers.MediasController.GetAll (Videoteka) in 41.8997ms
+2024-12-09 03:50:23.160 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/media/getall - null null
+2024-12-09 03:50:23.161 +01:00 [INF] Executed endpoint 'Videoteka.Controllers.MediasController.GetAll (Videoteka)'
+2024-12-09 03:50:23.165 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:23.168 +01:00 [INF] Executing endpoint 'Videoteka.Controllers.MediasController.GetAll (Videoteka)'
+2024-12-09 03:50:23.168 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/media/getall - 200 null application/json; charset=utf-8 63.2083ms
+2024-12-09 03:50:23.170 +01:00 [INF] Route matched with {action = "GetAll", controller = "Medias"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Videoteka.Shared.Models.Media]]] GetAll() on controller Videoteka.Controllers.MediasController (Videoteka).
+2024-12-09 03:50:23.216 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."MediaId", "m"."Description", "m"."Duration", "m"."Genre", "m"."Name", "m"."Rating", "m"."Stock", "m"."Type"
+FROM "Medias" AS "m"
+2024-12-09 03:50:23.220 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Videoteka.Shared.Models.Media, Videoteka.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-09 03:50:23.222 +01:00 [INF] Executed action Videoteka.Controllers.MediasController.GetAll (Videoteka) in 46.8121ms
+2024-12-09 03:50:23.224 +01:00 [INF] Executed endpoint 'Videoteka.Controllers.MediasController.GetAll (Videoteka)'
+2024-12-09 03:50:23.225 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/media/getall - 200 null application/json; charset=utf-8 65.4201ms
+2024-12-09 03:50:24.140 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:8080/client/getall - null null
+2024-12-09 03:50:24.141 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:8080/client/getall - null null
+2024-12-09 03:50:24.144 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:24.147 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:24.148 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:8080/client/getall - 204 null null 7.1956ms
+2024-12-09 03:50:24.148 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:8080/client/getall - 204 null null 7.6962ms
+2024-12-09 03:50:24.153 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/client/getall - null null
+2024-12-09 03:50:24.159 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:24.164 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."UserId", "u"."Password", "u"."RoleOfUser", "u"."Username"
+FROM "Users" AS "u"
+WHERE "u"."Username" = @__username_0
+LIMIT 1
+2024-12-09 03:50:24.170 +01:00 [INF] Executing endpoint 'Videoteka.Controllers.ClientsController.GetAll (Videoteka)'
+2024-12-09 03:50:24.173 +01:00 [INF] Route matched with {action = "GetAll", controller = "Clients"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Videoteka.Shared.Models.Media]]] GetAll() on controller Videoteka.Controllers.ClientsController (Videoteka).
+2024-12-09 03:50:24.184 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."ClientId", "c"."Address", "c"."Email", "c"."IsSubscribed", "c"."Name", "c"."PhoneNumber", "c"."UserId"
+FROM "Clients" AS "c"
+2024-12-09 03:50:24.197 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Videoteka.Shared.Models.Client, Videoteka.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-09 03:50:24.201 +01:00 [INF] Executed action Videoteka.Controllers.ClientsController.GetAll (Videoteka) in 25.0277ms
+2024-12-09 03:50:24.203 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/client/getall - null null
+2024-12-09 03:50:24.204 +01:00 [INF] Executed endpoint 'Videoteka.Controllers.ClientsController.GetAll (Videoteka)'
+2024-12-09 03:50:24.207 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:24.210 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/client/getall - 200 null application/json; charset=utf-8 57.6718ms
+2024-12-09 03:50:24.211 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."UserId", "u"."Password", "u"."RoleOfUser", "u"."Username"
+FROM "Users" AS "u"
+WHERE "u"."Username" = @__username_0
+LIMIT 1
+2024-12-09 03:50:24.217 +01:00 [INF] Executing endpoint 'Videoteka.Controllers.ClientsController.GetAll (Videoteka)'
+2024-12-09 03:50:24.218 +01:00 [INF] Route matched with {action = "GetAll", controller = "Clients"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Videoteka.Shared.Models.Media]]] GetAll() on controller Videoteka.Controllers.ClientsController (Videoteka).
+2024-12-09 03:50:24.221 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."ClientId", "c"."Address", "c"."Email", "c"."IsSubscribed", "c"."Name", "c"."PhoneNumber", "c"."UserId"
+FROM "Clients" AS "c"
+2024-12-09 03:50:24.224 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Videoteka.Shared.Models.Client, Videoteka.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-09 03:50:24.225 +01:00 [INF] Executed action Videoteka.Controllers.ClientsController.GetAll (Videoteka) in 5.2706ms
+2024-12-09 03:50:24.227 +01:00 [INF] Executed endpoint 'Videoteka.Controllers.ClientsController.GetAll (Videoteka)'
+2024-12-09 03:50:24.228 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/client/getall - 200 null application/json; charset=utf-8 25.5771ms
+2024-12-09 03:50:26.592 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/media/getall - null null
+2024-12-09 03:50:26.596 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:26.597 +01:00 [INF] Executing endpoint 'Videoteka.Controllers.MediasController.GetAll (Videoteka)'
+2024-12-09 03:50:26.598 +01:00 [INF] Route matched with {action = "GetAll", controller = "Medias"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Videoteka.Shared.Models.Media]]] GetAll() on controller Videoteka.Controllers.MediasController (Videoteka).
+2024-12-09 03:50:26.603 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."MediaId", "m"."Description", "m"."Duration", "m"."Genre", "m"."Name", "m"."Rating", "m"."Stock", "m"."Type"
+FROM "Medias" AS "m"
+2024-12-09 03:50:26.606 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Videoteka.Shared.Models.Media, Videoteka.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-09 03:50:26.607 +01:00 [INF] Executed action Videoteka.Controllers.MediasController.GetAll (Videoteka) in 6.2169ms
+2024-12-09 03:50:26.608 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/media/getall - null null
+2024-12-09 03:50:26.609 +01:00 [INF] Executed endpoint 'Videoteka.Controllers.MediasController.GetAll (Videoteka)'
+2024-12-09 03:50:26.612 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:26.613 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/media/getall - 200 null application/json; charset=utf-8 21.1423ms
+2024-12-09 03:50:26.614 +01:00 [INF] Executing endpoint 'Videoteka.Controllers.MediasController.GetAll (Videoteka)'
+2024-12-09 03:50:26.619 +01:00 [INF] Route matched with {action = "GetAll", controller = "Medias"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Videoteka.Shared.Models.Media]]] GetAll() on controller Videoteka.Controllers.MediasController (Videoteka).
+2024-12-09 03:50:26.622 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."MediaId", "m"."Description", "m"."Duration", "m"."Genre", "m"."Name", "m"."Rating", "m"."Stock", "m"."Type"
+FROM "Medias" AS "m"
+2024-12-09 03:50:26.625 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Videoteka.Shared.Models.Media, Videoteka.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-09 03:50:26.626 +01:00 [INF] Executed action Videoteka.Controllers.MediasController.GetAll (Videoteka) in 4.9345ms
+2024-12-09 03:50:26.628 +01:00 [INF] Executed endpoint 'Videoteka.Controllers.MediasController.GetAll (Videoteka)'
+2024-12-09 03:50:26.630 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/media/getall - 200 null application/json; charset=utf-8 21.5743ms
+2024-12-09 03:50:28.650 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/client/getall - null null
+2024-12-09 03:50:28.654 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:28.656 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."UserId", "u"."Password", "u"."RoleOfUser", "u"."Username"
+FROM "Users" AS "u"
+WHERE "u"."Username" = @__username_0
+LIMIT 1
+2024-12-09 03:50:28.660 +01:00 [INF] Executing endpoint 'Videoteka.Controllers.ClientsController.GetAll (Videoteka)'
+2024-12-09 03:50:28.661 +01:00 [INF] Route matched with {action = "GetAll", controller = "Clients"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Videoteka.Shared.Models.Media]]] GetAll() on controller Videoteka.Controllers.ClientsController (Videoteka).
+2024-12-09 03:50:28.665 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."ClientId", "c"."Address", "c"."Email", "c"."IsSubscribed", "c"."Name", "c"."PhoneNumber", "c"."UserId"
+FROM "Clients" AS "c"
+2024-12-09 03:50:28.667 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Videoteka.Shared.Models.Client, Videoteka.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-09 03:50:28.669 +01:00 [INF] Executed action Videoteka.Controllers.ClientsController.GetAll (Videoteka) in 5.6724ms
+2024-12-09 03:50:28.670 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/client/getall - null null
+2024-12-09 03:50:28.671 +01:00 [INF] Executed endpoint 'Videoteka.Controllers.ClientsController.GetAll (Videoteka)'
+2024-12-09 03:50:28.673 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:28.675 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/client/getall - 200 null application/json; charset=utf-8 24.778ms
+2024-12-09 03:50:28.677 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."UserId", "u"."Password", "u"."RoleOfUser", "u"."Username"
+FROM "Users" AS "u"
+WHERE "u"."Username" = @__username_0
+LIMIT 1
+2024-12-09 03:50:28.683 +01:00 [INF] Executing endpoint 'Videoteka.Controllers.ClientsController.GetAll (Videoteka)'
+2024-12-09 03:50:28.684 +01:00 [INF] Route matched with {action = "GetAll", controller = "Clients"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Videoteka.Shared.Models.Media]]] GetAll() on controller Videoteka.Controllers.ClientsController (Videoteka).
+2024-12-09 03:50:28.687 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."ClientId", "c"."Address", "c"."Email", "c"."IsSubscribed", "c"."Name", "c"."PhoneNumber", "c"."UserId"
+FROM "Clients" AS "c"
+2024-12-09 03:50:28.689 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Videoteka.Shared.Models.Client, Videoteka.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-09 03:50:28.691 +01:00 [INF] Executed action Videoteka.Controllers.ClientsController.GetAll (Videoteka) in 5.4885ms
+2024-12-09 03:50:28.693 +01:00 [INF] Executed endpoint 'Videoteka.Controllers.ClientsController.GetAll (Videoteka)'
+2024-12-09 03:50:28.694 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/client/getall - 200 null application/json; charset=utf-8 24.3465ms
+2024-12-09 03:50:30.727 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:8080/client/getall - null null
+2024-12-09 03:50:30.727 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:8080/media/getall - null null
+2024-12-09 03:50:30.728 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:8080/client/getall - null null
+2024-12-09 03:50:30.728 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:8080/media/getall - null null
+2024-12-09 03:50:30.730 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:30.733 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:30.737 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:30.740 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:30.741 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:8080/client/getall - 204 null null 14.4265ms
+2024-12-09 03:50:30.742 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:8080/media/getall - 204 null null 15.3189ms
+2024-12-09 03:50:30.743 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:8080/client/getall - 204 null null 15.1472ms
+2024-12-09 03:50:30.744 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:8080/media/getall - 204 null null 16.0911ms
+2024-12-09 03:50:30.747 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/client/getall - null null
+2024-12-09 03:50:30.752 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/media/getall - null null
+2024-12-09 03:50:30.761 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:30.764 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:30.767 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."UserId", "u"."Password", "u"."RoleOfUser", "u"."Username"
+FROM "Users" AS "u"
+WHERE "u"."Username" = @__username_0
+LIMIT 1
+2024-12-09 03:50:30.768 +01:00 [INF] Executing endpoint 'Videoteka.Controllers.MediasController.GetAll (Videoteka)'
+2024-12-09 03:50:30.771 +01:00 [INF] Executing endpoint 'Videoteka.Controllers.ClientsController.GetAll (Videoteka)'
+2024-12-09 03:50:30.772 +01:00 [INF] Route matched with {action = "GetAll", controller = "Medias"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Videoteka.Shared.Models.Media]]] GetAll() on controller Videoteka.Controllers.MediasController (Videoteka).
+2024-12-09 03:50:30.773 +01:00 [INF] Route matched with {action = "GetAll", controller = "Clients"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Videoteka.Shared.Models.Media]]] GetAll() on controller Videoteka.Controllers.ClientsController (Videoteka).
+2024-12-09 03:50:30.776 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."MediaId", "m"."Description", "m"."Duration", "m"."Genre", "m"."Name", "m"."Rating", "m"."Stock", "m"."Type"
+FROM "Medias" AS "m"
+2024-12-09 03:50:30.778 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."ClientId", "c"."Address", "c"."Email", "c"."IsSubscribed", "c"."Name", "c"."PhoneNumber", "c"."UserId"
+FROM "Clients" AS "c"
+2024-12-09 03:50:30.780 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Videoteka.Shared.Models.Media, Videoteka.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-09 03:50:30.783 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Videoteka.Shared.Models.Client, Videoteka.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-09 03:50:30.784 +01:00 [INF] Executed action Videoteka.Controllers.MediasController.GetAll (Videoteka) in 9.3349ms
+2024-12-09 03:50:30.785 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/media/getall - null null
+2024-12-09 03:50:30.786 +01:00 [INF] Executed action Videoteka.Controllers.ClientsController.GetAll (Videoteka) in 8.9619ms
+2024-12-09 03:50:30.787 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/client/getall - null null
+2024-12-09 03:50:30.788 +01:00 [INF] Executed endpoint 'Videoteka.Controllers.MediasController.GetAll (Videoteka)'
+2024-12-09 03:50:30.790 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:30.792 +01:00 [INF] Executed endpoint 'Videoteka.Controllers.ClientsController.GetAll (Videoteka)'
+2024-12-09 03:50:30.794 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:30.796 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/media/getall - 200 null application/json; charset=utf-8 43.6974ms
+2024-12-09 03:50:30.797 +01:00 [INF] Executing endpoint 'Videoteka.Controllers.MediasController.GetAll (Videoteka)'
+2024-12-09 03:50:30.798 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/client/getall - 200 null application/json; charset=utf-8 50.8202ms
+2024-12-09 03:50:30.800 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."UserId", "u"."Password", "u"."RoleOfUser", "u"."Username"
+FROM "Users" AS "u"
+WHERE "u"."Username" = @__username_0
+LIMIT 1
+2024-12-09 03:50:30.804 +01:00 [INF] Route matched with {action = "GetAll", controller = "Medias"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Videoteka.Shared.Models.Media]]] GetAll() on controller Videoteka.Controllers.MediasController (Videoteka).
+2024-12-09 03:50:30.810 +01:00 [INF] Executing endpoint 'Videoteka.Controllers.ClientsController.GetAll (Videoteka)'
+2024-12-09 03:50:30.813 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."MediaId", "m"."Description", "m"."Duration", "m"."Genre", "m"."Name", "m"."Rating", "m"."Stock", "m"."Type"
+FROM "Medias" AS "m"
+2024-12-09 03:50:30.814 +01:00 [INF] Route matched with {action = "GetAll", controller = "Clients"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Videoteka.Shared.Models.Media]]] GetAll() on controller Videoteka.Controllers.ClientsController (Videoteka).
+2024-12-09 03:50:30.817 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Videoteka.Shared.Models.Media, Videoteka.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-09 03:50:30.820 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."ClientId", "c"."Address", "c"."Email", "c"."IsSubscribed", "c"."Name", "c"."PhoneNumber", "c"."UserId"
+FROM "Clients" AS "c"
+2024-12-09 03:50:30.821 +01:00 [INF] Executed action Videoteka.Controllers.MediasController.GetAll (Videoteka) in 8.2093ms
+2024-12-09 03:50:30.824 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Videoteka.Shared.Models.Client, Videoteka.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-09 03:50:30.825 +01:00 [INF] Executed endpoint 'Videoteka.Controllers.MediasController.GetAll (Videoteka)'
+2024-12-09 03:50:30.827 +01:00 [INF] Executed action Videoteka.Controllers.ClientsController.GetAll (Videoteka) in 7.5806ms
+2024-12-09 03:50:30.828 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/media/getall - 200 null application/json; charset=utf-8 42.8754ms
+2024-12-09 03:50:30.829 +01:00 [INF] Executed endpoint 'Videoteka.Controllers.ClientsController.GetAll (Videoteka)'
+2024-12-09 03:50:30.835 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/client/getall - 200 null application/json; charset=utf-8 47.793ms
+2024-12-09 03:50:31.927 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:8080/borrow/getall - null null
+2024-12-09 03:50:31.927 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:8080/borrow/getall - null null
+2024-12-09 03:50:31.927 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/client/getall - null null
+2024-12-09 03:50:31.928 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/media/getall - null null
+2024-12-09 03:50:31.930 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:31.935 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:31.937 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:31.940 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:31.941 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:8080/borrow/getall - 204 null null 13.8791ms
+2024-12-09 03:50:31.942 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:8080/borrow/getall - 204 null null 14.9783ms
+2024-12-09 03:50:31.944 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."UserId", "u"."Password", "u"."RoleOfUser", "u"."Username"
+FROM "Users" AS "u"
+WHERE "u"."Username" = @__username_0
+LIMIT 1
+2024-12-09 03:50:31.945 +01:00 [INF] Executing endpoint 'Videoteka.Controllers.MediasController.GetAll (Videoteka)'
+2024-12-09 03:50:31.948 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/borrow/getall - null null
+2024-12-09 03:50:31.955 +01:00 [INF] Executing endpoint 'Videoteka.Controllers.ClientsController.GetAll (Videoteka)'
+2024-12-09 03:50:31.956 +01:00 [INF] Route matched with {action = "GetAll", controller = "Medias"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Videoteka.Shared.Models.Media]]] GetAll() on controller Videoteka.Controllers.MediasController (Videoteka).
+2024-12-09 03:50:31.959 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:31.960 +01:00 [INF] Route matched with {action = "GetAll", controller = "Clients"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Videoteka.Shared.Models.Media]]] GetAll() on controller Videoteka.Controllers.ClientsController (Videoteka).
+2024-12-09 03:50:31.963 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."MediaId", "m"."Description", "m"."Duration", "m"."Genre", "m"."Name", "m"."Rating", "m"."Stock", "m"."Type"
+FROM "Medias" AS "m"
+2024-12-09 03:50:31.965 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."UserId", "u"."Password", "u"."RoleOfUser", "u"."Username"
+FROM "Users" AS "u"
+WHERE "u"."Username" = @__username_0
+LIMIT 1
+2024-12-09 03:50:31.968 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."ClientId", "c"."Address", "c"."Email", "c"."IsSubscribed", "c"."Name", "c"."PhoneNumber", "c"."UserId"
+FROM "Clients" AS "c"
+2024-12-09 03:50:31.969 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Videoteka.Shared.Models.Media, Videoteka.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-09 03:50:31.972 +01:00 [INF] Executing endpoint 'Videoteka.Controllers.BorrowsController.GetAll (Videoteka)'
+2024-12-09 03:50:31.974 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Videoteka.Shared.Models.Client, Videoteka.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-09 03:50:31.976 +01:00 [INF] Executed action Videoteka.Controllers.MediasController.GetAll (Videoteka) in 13.5292ms
+2024-12-09 03:50:31.979 +01:00 [INF] Executed action Videoteka.Controllers.ClientsController.GetAll (Videoteka) in 12.7476ms
+2024-12-09 03:50:31.980 +01:00 [INF] Route matched with {action = "GetAll", controller = "Borrows"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Videoteka.Shared.Models.Borrow]]] GetAll() on controller Videoteka.Controllers.BorrowsController (Videoteka).
+2024-12-09 03:50:31.977 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/media/getall - null null
+2024-12-09 03:50:31.980 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/client/getall - null null
+2024-12-09 03:50:31.981 +01:00 [INF] Executed endpoint 'Videoteka.Controllers.MediasController.GetAll (Videoteka)'
+2024-12-09 03:50:31.982 +01:00 [INF] Executed endpoint 'Videoteka.Controllers.ClientsController.GetAll (Videoteka)'
+2024-12-09 03:50:31.987 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:31.990 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:31.991 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."BorrowId", "b"."BorrowDate", "b"."ClientId", "b"."HasBeenExtended", "b"."MediaId", "b"."Price", "b"."ReturnDate", "b"."Returned"
+FROM "Borrows" AS "b"
+2024-12-09 03:50:31.992 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/media/getall - 200 null application/json; charset=utf-8 63.9384ms
+2024-12-09 03:50:31.993 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/client/getall - 200 null application/json; charset=utf-8 65.4845ms
+2024-12-09 03:50:31.994 +01:00 [INF] Executing endpoint 'Videoteka.Controllers.MediasController.GetAll (Videoteka)'
+2024-12-09 03:50:31.996 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."UserId", "u"."Password", "u"."RoleOfUser", "u"."Username"
+FROM "Users" AS "u"
+WHERE "u"."Username" = @__username_0
+LIMIT 1
+2024-12-09 03:50:32.008 +01:00 [INF] Route matched with {action = "GetAll", controller = "Medias"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Videoteka.Shared.Models.Media]]] GetAll() on controller Videoteka.Controllers.MediasController (Videoteka).
+2024-12-09 03:50:32.010 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Videoteka.Shared.Models.Borrow, Videoteka.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-09 03:50:32.011 +01:00 [INF] Executing endpoint 'Videoteka.Controllers.ClientsController.GetAll (Videoteka)'
+2024-12-09 03:50:32.014 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."MediaId", "m"."Description", "m"."Duration", "m"."Genre", "m"."Name", "m"."Rating", "m"."Stock", "m"."Type"
+FROM "Medias" AS "m"
+2024-12-09 03:50:32.017 +01:00 [INF] Route matched with {action = "GetAll", controller = "Clients"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Videoteka.Shared.Models.Media]]] GetAll() on controller Videoteka.Controllers.ClientsController (Videoteka).
+2024-12-09 03:50:32.019 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Videoteka.Shared.Models.Media, Videoteka.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-09 03:50:32.022 +01:00 [INF] Executed action Videoteka.Controllers.BorrowsController.GetAll (Videoteka) in 37.3789ms
+2024-12-09 03:50:32.022 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."ClientId", "c"."Address", "c"."Email", "c"."IsSubscribed", "c"."Name", "c"."PhoneNumber", "c"."UserId"
+FROM "Clients" AS "c"
+2024-12-09 03:50:32.023 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/borrow/getall - null null
+2024-12-09 03:50:32.024 +01:00 [INF] Executed action Videoteka.Controllers.MediasController.GetAll (Videoteka) in 10.5208ms
+2024-12-09 03:50:32.025 +01:00 [INF] Executed endpoint 'Videoteka.Controllers.BorrowsController.GetAll (Videoteka)'
+2024-12-09 03:50:32.028 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Videoteka.Shared.Models.Client, Videoteka.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-09 03:50:32.031 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:32.032 +01:00 [INF] Executed endpoint 'Videoteka.Controllers.MediasController.GetAll (Videoteka)'
+2024-12-09 03:50:32.036 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/borrow/getall - 200 null application/json; charset=utf-8 87.8234ms
+2024-12-09 03:50:32.036 +01:00 [INF] Executed action Videoteka.Controllers.ClientsController.GetAll (Videoteka) in 14.4989ms
+2024-12-09 03:50:32.038 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."UserId", "u"."Password", "u"."RoleOfUser", "u"."Username"
+FROM "Users" AS "u"
+WHERE "u"."Username" = @__username_0
+LIMIT 1
+2024-12-09 03:50:32.038 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/media/getall - 200 null application/json; charset=utf-8 61.4297ms
+2024-12-09 03:50:32.043 +01:00 [INF] Executed endpoint 'Videoteka.Controllers.ClientsController.GetAll (Videoteka)'
+2024-12-09 03:50:32.046 +01:00 [INF] Executing endpoint 'Videoteka.Controllers.BorrowsController.GetAll (Videoteka)'
+2024-12-09 03:50:32.051 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/client/getall - 200 null application/json; charset=utf-8 70.3457ms
+2024-12-09 03:50:32.052 +01:00 [INF] Route matched with {action = "GetAll", controller = "Borrows"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Videoteka.Shared.Models.Borrow]]] GetAll() on controller Videoteka.Controllers.BorrowsController (Videoteka).
+2024-12-09 03:50:32.058 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "b"."BorrowId", "b"."BorrowDate", "b"."ClientId", "b"."HasBeenExtended", "b"."MediaId", "b"."Price", "b"."ReturnDate", "b"."Returned"
+FROM "Borrows" AS "b"
+2024-12-09 03:50:32.060 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Videoteka.Shared.Models.Borrow, Videoteka.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-09 03:50:32.062 +01:00 [INF] Executed action Videoteka.Controllers.BorrowsController.GetAll (Videoteka) in 4.6285ms
+2024-12-09 03:50:32.064 +01:00 [INF] Executed endpoint 'Videoteka.Controllers.BorrowsController.GetAll (Videoteka)'
+2024-12-09 03:50:32.065 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/borrow/getall - 200 null application/json; charset=utf-8 41.9161ms
+2024-12-09 03:50:34.622 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:8080/auth/getall - null null
+2024-12-09 03:50:34.627 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:34.628 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:8080/auth/getall - 204 null null 6.439ms
+2024-12-09 03:50:34.630 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:8080/auth/getall - null null
+2024-12-09 03:50:34.634 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/auth/getall - null null
+2024-12-09 03:50:34.635 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:34.639 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:34.640 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:8080/auth/getall - 204 null null 9.7166ms
+2024-12-09 03:50:34.647 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."UserId", "u"."Password", "u"."RoleOfUser", "u"."Username"
+FROM "Users" AS "u"
+WHERE "u"."Username" = @__username_0
+LIMIT 1
+2024-12-09 03:50:34.654 +01:00 [INF] Executing endpoint 'Videoteka.Controllers.LoginController.GetAll (Videoteka)'
+2024-12-09 03:50:34.660 +01:00 [INF] Route matched with {action = "GetAll", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Videoteka.Shared.Models.User]]] GetAll() on controller Videoteka.Controllers.LoginController (Videoteka).
+2024-12-09 03:50:34.673 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."UserId", "u"."Password", "u"."RoleOfUser", "u"."Username"
+FROM "Users" AS "u"
+2024-12-09 03:50:34.677 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Videoteka.Shared.Models.User, Videoteka.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-09 03:50:34.681 +01:00 [INF] Executed action Videoteka.Controllers.LoginController.GetAll (Videoteka) in 16.3966ms
+2024-12-09 03:50:34.682 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/auth/getall - null null
+2024-12-09 03:50:34.682 +01:00 [INF] Executed endpoint 'Videoteka.Controllers.LoginController.GetAll (Videoteka)'
+2024-12-09 03:50:34.686 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:34.687 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/auth/getall - 200 null application/json; charset=utf-8 53.0696ms
+2024-12-09 03:50:34.690 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 2)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."UserId", "u"."Password", "u"."RoleOfUser", "u"."Username"
+FROM "Users" AS "u"
+WHERE "u"."Username" = @__username_0
+LIMIT 1
+2024-12-09 03:50:34.695 +01:00 [INF] Executing endpoint 'Videoteka.Controllers.LoginController.GetAll (Videoteka)'
+2024-12-09 03:50:34.696 +01:00 [INF] Route matched with {action = "GetAll", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Videoteka.Shared.Models.User]]] GetAll() on controller Videoteka.Controllers.LoginController (Videoteka).
+2024-12-09 03:50:34.699 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."UserId", "u"."Password", "u"."RoleOfUser", "u"."Username"
+FROM "Users" AS "u"
+2024-12-09 03:50:34.703 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Videoteka.Shared.Models.User, Videoteka.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-09 03:50:34.706 +01:00 [INF] Executed action Videoteka.Controllers.LoginController.GetAll (Videoteka) in 7.3728ms
+2024-12-09 03:50:34.708 +01:00 [INF] Executed endpoint 'Videoteka.Controllers.LoginController.GetAll (Videoteka)'
+2024-12-09 03:50:34.710 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/auth/getall - 200 null application/json; charset=utf-8 27.9128ms
+2024-12-09 03:50:50.205 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:8080/auth/login - null null
+2024-12-09 03:50:50.209 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:50.210 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:8080/auth/login - 204 null null 4.8552ms
+2024-12-09 03:50:50.213 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:8080/auth/login - application/json 39
+2024-12-09 03:50:50.216 +01:00 [INF] CORS policy execution successful.
+2024-12-09 03:50:50.217 +01:00 [INF] Executing endpoint 'Videoteka.Controllers.LoginController.Login (Videoteka)'
+2024-12-09 03:50:50.219 +01:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Videoteka.Shared.Models.User) on controller Videoteka.Controllers.LoginController (Videoteka).
+2024-12-09 03:50:50.223 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."UserId", "u"."Password", "u"."RoleOfUser", "u"."Username"
+FROM "Users" AS "u"
+WHERE "u"."Username" = @__username_0
+LIMIT 1
+2024-12-09 03:50:50.226 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable`1[[Videoteka.Shared.Models.Role, Videoteka.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-12-09 03:50:50.228 +01:00 [INF] Executed action Videoteka.Controllers.LoginController.Login (Videoteka) in 6.7958ms
+2024-12-09 03:50:50.229 +01:00 [INF] Executed endpoint 'Videoteka.Controllers.LoginController.Login (Videoteka)'
+2024-12-09 03:50:50.230 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:8080/auth/login - 200 null application/json; charset=utf-8 16.9379ms
+2024-12-09 04:06:01.016 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/media/getall - null null
+2024-12-09 04:06:01.019 +01:00 [INF] CORS policy execution successful.
+2024-12-09 04:06:01.021 +01:00 [INF] Executing endpoint 'Videoteka.Controllers.MediasController.GetAll (Videoteka)'
+2024-12-09 04:06:01.023 +01:00 [INF] Route matched with {action = "GetAll", controller = "Medias"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Videoteka.Shared.Models.Media]]] GetAll() on controller Videoteka.Controllers.MediasController (Videoteka).
+2024-12-09 04:06:01.027 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."MediaId", "m"."Description", "m"."Duration", "m"."Genre", "m"."Name", "m"."Rating", "m"."Stock", "m"."Type"
+FROM "Medias" AS "m"
+2024-12-09 04:06:01.030 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Videoteka.Shared.Models.Media, Videoteka.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-09 04:06:01.031 +01:00 [INF] Executed action Videoteka.Controllers.MediasController.GetAll (Videoteka) in 5.3449ms
+2024-12-09 04:06:01.033 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:8080/media/getall - null null
+2024-12-09 04:06:01.033 +01:00 [INF] Executed endpoint 'Videoteka.Controllers.MediasController.GetAll (Videoteka)'
+2024-12-09 04:06:01.036 +01:00 [INF] CORS policy execution successful.
+2024-12-09 04:06:01.038 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/media/getall - 200 null application/json; charset=utf-8 21.9361ms
+2024-12-09 04:06:01.039 +01:00 [INF] Executing endpoint 'Videoteka.Controllers.MediasController.GetAll (Videoteka)'
+2024-12-09 04:06:01.044 +01:00 [INF] Route matched with {action = "GetAll", controller = "Medias"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Videoteka.Shared.Models.Media]]] GetAll() on controller Videoteka.Controllers.MediasController (Videoteka).
+2024-12-09 04:06:01.047 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "m"."MediaId", "m"."Description", "m"."Duration", "m"."Genre", "m"."Name", "m"."Rating", "m"."Stock", "m"."Type"
+FROM "Medias" AS "m"
+2024-12-09 04:06:01.050 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Videoteka.Shared.Models.Media, Videoteka.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-09 04:06:01.051 +01:00 [INF] Executed action Videoteka.Controllers.MediasController.GetAll (Videoteka) in 4.6651ms
+2024-12-09 04:06:01.053 +01:00 [INF] Executed endpoint 'Videoteka.Controllers.MediasController.GetAll (Videoteka)'
+2024-12-09 04:06:01.054 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:8080/media/getall - 200 null application/json; charset=utf-8 21.1614ms

@@ -501,15 +501,18 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
   padding: 20px;
   background-color: #f9f9f9;
 }
 
 .homepage-left {
   flex: 1;
-  padding: 40px;
+  padding: 40px;;
+  height: 80vh ;
   background: #ffffff;
+  align-items: center;
+  align-content: center;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -543,11 +546,39 @@ button:hover {
   flex: 1;
   padding: 40px;
   background: #ffffff;
+  align-content: center;
+  height: 80vh;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+.reg-button-form {
+  margin: 20px;
+}
+
+.login-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  align-self: center;
+  justify-self: center;
+}
+
+.login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  width: 300px;
 }
 
 .register-prompt-button {

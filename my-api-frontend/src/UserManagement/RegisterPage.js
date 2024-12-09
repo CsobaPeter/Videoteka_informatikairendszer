@@ -83,7 +83,7 @@ const RegisterPage = () => {
 
     return (
         <div>
-            <button onClick={handleOpenModal}>Registration</button>
+            <button className={"reg-button-form"} onClick={handleOpenModal}>Registration</button>
             {isModalOpen && (
                 <div className="modal">
                     <h2>Register</h2>
